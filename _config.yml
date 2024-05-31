@@ -8,13 +8,13 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Your Name / Site Title"
+title                    : "Vu Duy Tung / Mino's personal portfolio"
 title_separator          : "-"
-name                     : &name "Your Name"
+name                     : &name "Vu Duy Tung"
 description              : &description "personal description"
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://vu-duy-tung.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "vu-duy-tung/vu-duy-tung.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -22,11 +22,11 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
-  pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  name             : "Vu Duy Tung"
+  pronouns         : # example: "he/his"  
+  bio              : "Computer Science undergraduate at VinUniversity"
+  location         : "Dong Nai, Viet Nam"
+  employer         : "VinUniversity"
   uri              : # URL
   email            : "none@example.org" 
 
@@ -121,7 +121,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               : "@Play_With_Mino"
 facebook:
   username               :
   app_id                 :
