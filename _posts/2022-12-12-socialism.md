@@ -1,7 +1,7 @@
 ---
 title: 'Human behaviors under the pressure of the social system'
-date: 2015-08-14
-permalink: /posts/socialism
+date: 2022-12-12
+permalink: /2022/12/12/socialism/
 tags:
   - socialism
 ---
