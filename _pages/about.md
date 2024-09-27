@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 ## Research Interests 
-My current research interests are practical Machine Learning application such as Healthcare, Environment (especially vital isssues in Vietnam), Vision Language Models, Large Language Models, Graph Representation Learning.
+My current research interests are practical Machine Learning problems such as Healthcare, Environment (especially vital issues in Vietnam), Vision Language Models, Large Language Models, Graph Representation Learning.
 
 ## Contact
 Email: vdtung21.work@gmail.com
