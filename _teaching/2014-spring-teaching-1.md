@@ -4,7 +4,7 @@ collection: teaching
 type: "Graduate course"
 permalink: /teaching/2014-spring-teaching-1
 venue: "The University of Alabama at Birmingham, Department of Computer Science"
-date: 2014-01-01
+date: 2024-01-01
 location: "City, Country"
 ---
 
