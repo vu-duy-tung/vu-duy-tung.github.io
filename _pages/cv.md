@@ -15,13 +15,13 @@ Education
 
 Work experience
 ======
-* FPT.AI - FPT Smart Cloud || AI Engineer/Researcher Intern
+* FPT.AI - FPT Smart Cloud -- AI Engineer/Researcher Intern
   * Finetune open-source Vienamese LLMs (Vietnamese-Llama2-7B, VinaLlama-7B, Vistral-7B) using Low-Rank Adaptation for Dialogue State Tracking problem on ViWOZ dataset. 
 
-* VinUniversity || Research Assistant - Mentor: Prof. Le Duy Dung
+* VinUniversity -- Research Assistant - Mentor: Prof. Le Duy Dung
   * Explore the reasoning ability of LLMs for Interactive Theorem Proving in Lean programming language, utilize LeanDojo framework.
 
-* HysonLab || Research Assistant
+* HysonLab -- Research Assistant
   * Research on Graph-enhanced multimodal model for Design2Code. 
   * Research on Graph RAG for Document Queries, a collaborative project with Knovel Lab
 
