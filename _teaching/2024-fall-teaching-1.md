@@ -10,7 +10,7 @@ location: "City, Country"
 
 This is a description of my teaching experience at The University of Alabama at Birmingham for CS660/CS760, which is Artificial Intelligence course.
 
-- You can view the course syllabus [here](https://l.facebook.com/l.php?u=https%3A%2F%2Fpeople.cs.uchicago.edu%2F~hytruongson%2FUAB%2FFall_2024_CS_660_CS_760_Syllabus.pdf%3Ffbclid%3DIwZXh0bgNhZW0CMTAAAR2OcMsLc3Qmt7JIpNAkNACVkr4efIemUgWjdNbwUxh1nkNSBPbBajtv6lo_aem_7yTCorZwbDo8qtvse0e2Tw&h=AT27uxoKm8IyNcbAZDq3vrABH_Q4Jfp5xu-ZI2w82QplTr6wCpKFAbiuPoSeKvA4iObV6oYNRSbBrqf-ITsEuKrYOLntmDiqlazhwWCxTcv1cPco4Z5DAoYlZgk4cD7J8Fi-k58Jf2a-yUzNK80UyQ)
+- You can view the course syllabus [here](https://people.cs.uchicago.edu/~hytruongson/UAB/Fall_2024_CS_660_CS_760_Syllabus.pdf)
 
 
 In this course, I prepare the materials including documents, slides, and demo for GraphRAG lecture. The lecture delves into the innovative approaches of Graph Retrieval-Augmented Generation (GraphRAG), focusing on the synergy between graph-based data structures and generative models. The lecture primarily draws from the comprehensive survey by Peng et al. [1], as well as practical insights from the Neo4j Developer Blog on integrating Neo4j with LangChain [2].
