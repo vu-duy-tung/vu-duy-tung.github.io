@@ -9,7 +9,7 @@ redirect_from:
 ## Research Interests 
 Currently, I am working under the supervision of [Prof. Wray Buntine](https://bayesian-models.org/) and [Dr. Le Duy Dung](https://andrew-dungle.github.io/) in the Medical Machine Translation project at VinUniversity. Besides, I honors to work as a student reasearch assistant with [Dr. Hy Truong Son](https://people.cs.uchicago.edu/~hytruongson/) at UAB in the intersection of Graph Representation and Multimodal Models for Design2Code. 
 
-During my first two years at VinUniversity, I was fortunate to participate in two summer internship at [FSoft AI Center](https://fpt-aicenter.com/en) as AI Resident intern and at [FPT Smart Cloud](https://fpt.ai/) as AI Engineer intern. 
+During my first two years at VinUniversity, I was fortunate to participate in two summer internships at [FSoft AI Center](https://fpt-aicenter.com/en) as AI Resident intern and at [FPT Smart Cloud](https://fpt.ai/) as AI Engineer intern. 
 
 My research interests emcompass solving practical Machine Learning problems in Healthcare and Environment (especially vital issues in Vietnam), tackling toughest nuts in Vision Language Models, Large Language Models, Graph Representation Learning
 
