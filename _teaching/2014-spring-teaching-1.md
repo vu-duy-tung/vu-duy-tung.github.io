@@ -8,7 +8,7 @@ date: 2024-01-01
 location: "City, Country"
 ---
 
-his is a description of my teaching experience at The University of Alabama at Birmingham for CS660/CS760, which is Artificial Intelligence course.
+This is a description of my teaching experience at The University of Alabama at Birmingham for CS660/CS760, the Artificial Intelligence course.
 
 You can view the course syllabus [here](https://people.cs.uchicago.edu/~hytruongson/UAB/Fall_2024_CS_660_CS_760_Syllabus.pdf)
 

@@ -7,10 +7,14 @@ redirect_from:
   - /about.html
 ---
 ## Research Interests 
-My current research interests are practical Machine Learning problems such as Healthcare, Environment (especially vital issues in Vietnam), Vision Language Models, Large Language Models, Graph Representation Learning.
+Currently, I am working under the supervision of [Prof. Wray Buntine](https://bayesian-models.org/) and [Dr. Le Duy Dung](https://andrew-dungle.github.io/) in the Medical Machine Translation project at VinUniversity. Besides, I honors to work as a student reasearch assistant with [Dr. Hy Truong Son](https://people.cs.uchicago.edu/~hytruongson/) at UAB in the intersection of Graph Representation and Multimodal Models for Design2Code. 
+
+During my first two years at VinUniversity, I was fortunate to participate in two summer internship at [FSoft AI Center](https://fpt-aicenter.com/en) as AI Resident intern and at [FPT Smart Cloud](https://fpt.ai/) as AI Engineer intern. 
+
+My research interests emcompass solving practical Machine Learning problems in Healthcare and Environment (especially vital issues in Vietnam), tackling toughest nuts in Vision Language Models, Large Language Models, Graph Representation Learning
 
 ## Contact
-Email: vdtung21.work@gmail.com
+Email: 21tung.vd@vinuni.edu.vn
 
 
 <!-- This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
