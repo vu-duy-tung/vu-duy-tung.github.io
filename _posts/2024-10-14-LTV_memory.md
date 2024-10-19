@@ -6,7 +6,7 @@ tags:
   - Vietnamese
 ---
 
-Trong lúc ngồi lọc đống ảnh trong album điện thoại, mình có vô tình xem qua một số hình chụp từ hồi học cấp 3, thế là nhân dịp kỷ niệm 30 năm ngày thành lập trường, mình quyết định lưu giữ một số ảnh trên đây, thêm một ít chú thích để sau này lỡ quên thì còn có cái mà xem lại. 
+Trong lúc ngồi lọc đống ảnh trong album điện thoại, mình có vô tình xem qua một số hình chụp từ hồi học cấp 3, thế là nhân dịp kỷ niệm 30 năm ngày thành lập trường, mình quyết định lưu giữ một số ảnh trên đây, thêm một ít chú thích để sau này lỡ quên thì còn có cái mà nhớ lại. 
 
 # Một vài kỉ niệm tại trường THPT Chuyên Lương Thế Vinh, Biên Hòa, Đồng Nai.
 
