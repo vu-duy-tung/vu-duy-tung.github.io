@@ -39,7 +39,7 @@ Mình là học sinh lớp chuyên Tin khóa 18 của trường. Tính đến th
 <p align="center">
   <img src="/images/qua_chi_phung.png" alt="Qua chi Phung" style="border:4px solid black; max-height: 500px">
 </p>
-Hồi đấy chị Phụng có về dạy môn văn cho lớp mình mấy buổi, trước buổi cuối cùng chị dạy thì mình đại diện tổ đi chuẩn bị quà, nhưng mình chỉ đi chọn quà thôi chứ ý tưởng tặng quà này chắc chắn là của Nhi. (Giờ mình cũng không nhớ nổi lắp pin vào thì quả cầu tuyết này bật bài nhạc gì nữa rồi, chỉ nhớ là bài đấy hay lắm)
+Hồi đấy chị Phụng có về dạy môn văn cho lớp mình mấy buổi, trước buổi cuối cùng chị dạy thì mình đại diện tổ đi chuẩn bị quà, nhưng mình chỉ đi chọn quà thôi chứ ý tưởng tặng quà này chắc chắn là của Nhi. Giờ mình cũng không nhớ nổi lắp pin vào thì quả cầu tuyết này bật bài nhạc gì nữa rồi, chỉ nhớ là bài đấy hay lắm.
 
 
 <p align="center">
