@@ -9,13 +9,12 @@ tags:
 Trong lúc ngồi lọc đống ảnh trong album điện thoại, mình có vô tình xem qua một số hình chụp từ hồi học cấp 3, thế nên nhân dịp kỷ niệm 30 năm ngày thành lập trường, mình quyết định lưu giữ một số ảnh trên đây, kèm một ít chú thích để sau này lỡ quên thì còn có cái mà nhớ lại. 
 
 # Một vài kỉ niệm tại trường THPT Chuyên Lương Thế Vinh, Biên Hòa, Đồng Nai.
-
-Chào cậu, mình đoán là để đến được đây, cậu phải vào academic website của mình, vào phần blogs để xem có gì không sau đó mới vô tình click vào đây. Mà mình đoán sẽ không có nhiều người làm vậy nên xin chúc mừng, cậu là một trong những người may mắn được đọc bài viết duy nhất và có lẽ là cuối cùng của mình về kỉ niệm tại trường THPT Chuyên Lương Thế Vinh kể từ khi ra trường. Hehe. 
+Mình đoán sẽ không có nhiều người đọc cái này nên xin chúc mừng, cậu là một trong những người may mắn được đọc bài viết duy nhất và có lẽ là cuối cùng của mình về kỉ niệm tại trường THPT Chuyên Lương Thế Vinh kể từ khi ra trường. Hehe. 
 
 <p align="center">
   <img src="/images/anhlop.png" alt="Anh lop" style="border:4px solid black; max-height: 500px">
 </p>
-Mình là học sinh lớp chuyên Tin khóa 18 của trường. Tính đến thời điểm hiện tại, mình cũng chỉ mới ra trường được ba năm thôi, và đã hơn một năm rồi mình không hồi tưởng nhiều về những ngày tháng khi ấy, cũng không trò chuyện nhiều với đám bạn cấp 3 nữa. Dù vậy, ba năm học ở trường THPT Chuyên Lương Thế Vinh với mình vẫn mãi là thời thanh xuân tươi đẹp, đáng nhớ nhất.
+Mình là học sinh lớp chuyên Tin khóa 18 của trường. Tính đến thời điểm hiện tại, mình chỉ vừa ra trường được ba năm, và hơn một năm rồi mình không hồi tưởng nhiều về những ngày tháng ấy, cũng không trò chuyện nhiều với bạn bè cấp 3 nữa. Dù vậy, ba năm học ở trường THPT Chuyên Lương Thế Vinh với mình vẫn mãi là thời thanh xuân tươi đẹp, đáng nhớ nhất.
 
 
 <p align="center">
@@ -27,7 +26,7 @@ Mình là học sinh lớp chuyên Tin khóa 18 của trường. Tính đến th
 <p align="center">
   <img src="/images/kiyeu.jpeg" alt="Anh ki yeu" style="border:4px solid black; max-height: 500px">
 </p>
-Đây là một bức ảnh đẹp trong bộ ảnh kỷ yếu khi đấy mình có lưu về điện thoại. Hồi đấy lớp mình chia thành 3 dãy thì đám đang ngồi trên cầu thang là dãy giữa (dãy của mình), còn đám đang chạy lên là dãy bên phải của lớp, hướng về phía bục giảng.
+Đây là một bức ảnh đẹp trong bộ ảnh kỷ yếu mình có lưu về điện thoại. Hồi đấy lớp mình chia thành 3 dãy thì đám đang ngồi trên cầu thang là dãy giữa (dãy của mình), còn đám đang chạy lên là dãy bên phải của lớp, hướng về phía bục giảng.
 
 
 <p align="center">
