@@ -20,13 +20,13 @@ Mình là học sinh lớp chuyên Tin khóa 18 của trường. Tính đến th
 <p align="center">
   <img src="/images/hanhlang.png" alt="Hanh lang doi tuyen" style="border:4px solid black; max-height: 500px">
 </p>
-Đây là dãy hành lang gần phòng học đội tuyển Tin, là khu vực đầy ắp kỷ niệm với mình nhất bởi từ sáng đến chiều đám đội tuyển tụi mình đều phải lên đây học. Đợt còn mới ra trường, có những khi mình ngồi ngơ ngẩn một lúc vì vô tình nhớ lại một mẩu chuyện nào đó, thế là một loạt câu chuyện khác lần lượt ùa về.
+Đây là dãy hành lang gần phòng học đội tuyển Tin, là khu vực đầy ắp kỷ niệm nhất với mình bởi từ sáng đến chiều đám đội tuyển tụi mình đều phải lên đây học. Đợt còn mới ra trường, có những khi mình ngồi ngơ ngẩn một lúc vì vô tình nhớ lại một mẩu chuyện nào đó, thế là một loạt câu chuyện khác lần lượt ùa về.
 
 
 <p align="center">
   <img src="/images/kiyeu.jpeg" alt="Anh ki yeu" style="border:4px solid black; max-height: 500px">
 </p>
-Đây là một bức ảnh đẹp trong bộ ảnh kỷ yếu mình có lưu về điện thoại. Hồi đấy lớp mình chia thành 3 dãy thì đám đang ngồi trên cầu thang là dãy giữa (dãy của mình), còn đám đang chạy lên là dãy bên phải của lớp, hướng về phía bục giảng.
+Đây là một bức ảnh đẹp trong bộ ảnh kỷ yếu mình có lưu về điện thoại. Hồi đấy lớp mình chia thành 3 dãy thì đám đang ngồi trên cầu thang là dãy giữa (dãy của mình), còn đám đang chạy lên là dãy bên phải của lớp theo hướng nhìn về phía bục giảng.
 
 
 <p align="center">
