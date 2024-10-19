@@ -37,5 +37,5 @@ Chào cậu, mình đoán là để đến được đây, cậu phải vào aca
 </p>
 
 <p align="center">
-  <img src="/images/message.JPG" alt="Thi online" style="border:4px solid black; max-height: 500px">
+  <img src="/images/nha_thay_bao.png" alt="Nha thay Bao" style="border:4px solid black; max-height: 500px">
 </p>
