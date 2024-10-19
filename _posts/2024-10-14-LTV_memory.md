@@ -8,8 +8,34 @@ tags:
 
 # Một vài kỉ niệm tại trường THPT Chuyên Lương Thế Vinh, Biên Hòa, Đồng Nai.
 
-Chào cậu, mình đoán là để đến được đây, cậu phải vào academic website của mình, vào phần blogs để xem có gì hay ho sau đó mới tới vào được bài viết này. Và mình đoán sẽ không có nhiều người làm như vậy nên xin chúc mừng, cậu là một trong những người may mắn được đọc bài viết duy nhất và có lẽ là cuối cùng của mình về kỉ niệm tại trường THPT Chuyên Lương Thế Vinh, kể từ khi ra trường.
+Chào cậu, mình đoán là để đến được đây, cậu phải vào academic website của mình, vào phần blogs để xem có gì không sau đó mới vô tình click vào đây. Mà mình đoán sẽ không có nhiều người làm vậy nên xin chúc mừng, cậu là một trong những người may mắn được đọc bài viết duy nhất và có lẽ là cuối cùng của mình về kỉ niệm tại trường THPT Chuyên Lương Thế Vinh, kể từ khi ra trường. Hehe. 
 
 <p align="center">
   <img src="/images/anhlop.png" alt="Anh lop" style="border:4px solid black; max-height: 500px">
+</p>
+
+
+<p align="center">
+  <img src="/images/hanhlang.png" alt="Hanh lang doi tuyen" style="border:4px solid black; max-height: 500px">
+</p>
+
+<p align="center">
+  <img src="/images/kiyeu.jpeg" alt="Anh ki yeu" style="border:4px solid black; max-height: 500px">
+</p>
+
+<p align="center">
+  <img src="/images/thi_online.png" alt="Thi online" style="border:4px solid black; max-height: 500px">
+</p>
+
+
+<p align="center">
+  <img src="/images/qua_chi_phung.png" alt="Qua chi Phung" style="border:4px solid black; max-height: 500px">
+</p>
+
+<p align="center">
+  <img src="/images/message.JPG" alt="Thi online" style="border:4px solid black; max-height: 500px">
+</p>
+
+<p align="center">
+  <img src="/images/message.JPG" alt="Thi online" style="border:4px solid black; max-height: 500px">
 </p>
