@@ -1,5 +1,5 @@
 ---
-title: 'Little memories at Luong The Vinh High School'
+title: 'Little memories at Luong The Vinh High School for the Gifted'
 date: 2024-10-14
 permalink: /2024/10/14/LTV_memory/
 tags:
