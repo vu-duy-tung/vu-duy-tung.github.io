@@ -6,6 +6,9 @@ tags:
   - socialism
 ---
 
+Some random thoughts
+---
+
 # Human behaviors under the pressure of the social system
 ### Introduction
 In a paper regarding the future of socialism, Roemer (1994) claimed that socialists' goals were equality of chance for self-realization, equality of opportunity for political power, and social status. In our current society, the involvement of numerous factors (such as technology, climate change, poverty, and commerce) makes societal challenges more complicated since inequality shows up in both the relationships between individuals and various groups of people. Therefore, the aim of socialists is evidently not as simple as solving the conflict between two people; examining a single in society means taking social status, social mobility, social status, cultural norms, and cultural values into account (Krech et al., 1962). Furthermore, human behavior significantly impacts equality in a community, which is why behavior is crucial to many other fields of science, such as philosophy and artificial intelligence. This literature review will examine the crucial relationship between social behaviors and the societal systems by using the academic setting as an exemplary case. The analysis will explicitly acknowledge the three edges of socialism: the social system, social norms, and social behaviors; then, their relationship will be seen in each individual portion.
