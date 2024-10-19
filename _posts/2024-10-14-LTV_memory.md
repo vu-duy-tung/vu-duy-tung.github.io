@@ -15,9 +15,10 @@ Chào cậu, mình đoán là để đến được đây, cậu phải vào aca
 </p>
 
 
-<p align="center">
+<figure style="text-align: center;">
   <img src="/images/hanhlang.png" alt="Hanh lang doi tuyen" style="border:4px solid black; max-height: 500px">
-</p>
+  <figcaption>Dãy hành lang gần phòng học của đội tuyển Tin</figcaption>
+</figure>
 
 <p align="center">
   <img src="/images/kiyeu.jpeg" alt="Anh ki yeu" style="border:4px solid black; max-height: 500px">
