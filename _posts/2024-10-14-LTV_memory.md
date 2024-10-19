@@ -33,9 +33,25 @@ Chào cậu, mình đoán là để đến được đây, cậu phải vào aca
 </p>
 
 <p align="center">
-  <img src="/images/message.JPG" alt="Thi online" style="border:4px solid black; max-height: 500px">
+  <img src="/images/message.JPG" alt="Message" style="border:4px solid black; max-height: 250px">
 </p>
 
 <p align="center">
   <img src="/images/nha_thay_bao.png" alt="Nha thay Bao" style="border:4px solid black; max-height: 500px">
+</p>
+
+<p align="center">
+  <img src="/images/hocba.png" alt="Hoc Ba" style="border:4px solid black; max-height: 500px">
+</p>
+
+<p align="center">
+  <img src="/images/ruathau.png" alt="Rua Thau" style="max-height: 500px">
+</p>
+
+<p align="center">
+  <img src="/images/gau_bong.png" alt="Gau Bong" style="border:4px solid black; max-height: 500px">
+</p>
+
+<p align="center">
+  <img src="/images/the_anh_lop.JPG" alt="the anh lop" style="border:4px solid black; max-height: 500px">
 </p>
