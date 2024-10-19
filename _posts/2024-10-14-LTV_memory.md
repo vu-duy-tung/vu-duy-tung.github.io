@@ -6,7 +6,7 @@ tags:
   - Vietnamese
 ---
 
-Trong lúc ngồi lọc đống ảnh trong album điện thoại, mình có vô tình xem qua một số hình chụp từ hồi học cấp 3, thế là nhân dịp kỷ niệm 30 năm ngày thành lập trường, mình quyết định lưu giữ một số ảnh trên đây, thêm một ít chú thích để sau này lỡ quên thì còn có cái mà nhớ lại. 
+Trong lúc ngồi lọc đống ảnh trong album điện thoại, mình có vô tình xem qua một số hình chụp từ hồi học cấp 3, thế nên nhân dịp kỷ niệm 30 năm ngày thành lập trường, mình quyết định lưu giữ một số ảnh trên đây, kèm một ít chú thích để sau này lỡ quên thì còn có cái mà nhớ lại. 
 
 # Một vài kỉ niệm tại trường THPT Chuyên Lương Thế Vinh, Biên Hòa, Đồng Nai.
 
@@ -39,7 +39,7 @@ Mình là học sinh lớp chuyên Tin khóa 18 của trường. Tính đến th
 <p align="center">
   <img src="/images/qua_chi_phung.png" alt="Qua chi Phung" style="border:4px solid black; max-height: 500px">
 </p>
-Hồi đấy chị Phụng có về dạy môn văn cho lớp mình mấy buổi, trước buổi cuối cùng chị dạy thì mình đại diện tổ đi chuẩn bị quà, nhưng mình chỉ đi chọn quà thôi chứ ý tưởng tặng quà này chắc chắn là của Nhi. Giờ mình cũng không nhớ nổi lắp pin vào thì quả cầu tuyết này bật bài nhạc gì nữa rồi, chỉ nhớ là bài đấy hay lắm.
+Hồi đấy chị Phụng có về dạy môn Văn cho lớp mình mấy buổi, trước buổi cuối cùng chị dạy thì mình đại diện tổ đi chuẩn bị quà, nhưng mình chỉ đi chọn quà thôi chứ ý tưởng tặng quà này chắc chắn là của Nhi. Giờ mình cũng không nhớ nổi lắp pin vào thì quả cầu tuyết này bật bài nhạc gì nữa rồi, chỉ nhớ là bài đấy hay lắm.
 
 
 <p align="center">
