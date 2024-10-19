@@ -52,8 +52,7 @@ Cũng vì COVID mà ngay trong tuần tổ chức Hạ Vũ, trường phải cho
   <img src="/images/nha_thay_bao.png" alt="Nha thay Bao" style="border:4px solid black; max-height: 500px">
 </p>
 Ảnh này trông mọi người buồn ác. Hôm đấy là buổi cuối cùng, cả lớp ngồi với nhau ở nhà chú Bảo, thầy chủ nhiệm của tụi mình. Nếu có gì để tiếc nuối vào lúc này mình tiếc rằng hồi đấy không được về lớp học nhiều buổi hơn cùng tất cả mọi người. 
-\\
-\\
+
 <p align="center">
   <img src="/images/hocba.png" alt="Hoc Ba" style="border:4px solid black; max-height: 500px">
 </p>
