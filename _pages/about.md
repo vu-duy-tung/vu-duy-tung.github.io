@@ -7,11 +7,9 @@ redirect_from:
   - /about.html
 ---
 ## About
-Currently, I am working under the supervision of [Prof. Wray Buntine](https://bayesian-models.org/) and [Dr. Le Duy Dung](https://andrew-dungle.github.io/) in the Medical Machine Translation project at VinUniversity. Besides, I am honoured to work as a student reasearch assistant with [Dr. Hy Truong Son](https://people.cs.uchicago.edu/~hytruongson/) at UAB in the intersection of Graph Representation and Multimodal Models for Design2Code. 
+My research interests: Multimodal AI, AI4SE
 
-During my first two years at VinUniversity, I was fortunate to participate in two summer internships at [FSoft AI Center](https://fpt-aicenter.com/en) as AI Resident intern and at [FPT Smart Cloud](https://fpt.ai/) as AI Engineer intern. 
-
-My research interests emcompass solving practical Machine Learning problems in Healthcare and Environment (especially vital issues in Vietnam), tackling toughest nuts in Vision Language Models, Large Language Models, Graph Representation Learning
+ I'm currently following my curiosity: diving into research in AI/ML and occasionally playing Competitive Programming. I love dogs, cats, and kids. I would love to collaborate on any kind of project to support children who are inaccessible to education, or I will launch such a program in the future when I have a well-defined plan. The manga I like most is *Space Brother*.
 
 ## Contact
 Email: 21tung.vd@vinuni.edu.vn
