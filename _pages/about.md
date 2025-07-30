@@ -6,8 +6,8 @@ redirect_from:
   - /about/
   - /about.html
 ---
-## About
-My research interests: Multimodal AI, AI4SE
+## About me
+My research interests: <code style="color : darkorange">Multimodal AI</code>, <code style="color : blue">AI4SE</code>
 
 I'm currently following my curiosity: diving into research in AI/ML and occasionally playing Competitive Programming. I love dogs, cats, and kids. I would love to collaborate on any kind of project that supports children who are inaccessible to education, or I will launch such a program in the future when I have a well-defined plan. The manga I like most is *Space Brother*.
 
