@@ -9,7 +9,7 @@ redirect_from:
 ## About
 My research interests: Multimodal AI, AI4SE
 
- I'm currently following my curiosity: diving into research in AI/ML and occasionally playing Competitive Programming. I love dogs, cats, and kids. I would love to collaborate on any kind of project to support children who are inaccessible to education, or I will launch such a program in the future when I have a well-defined plan. The manga I like most is *Space Brother*.
+I'm currently following my curiosity: diving into research in AI/ML and occasionally playing Competitive Programming. I love dogs, cats, and kids. I would love to collaborate on any kind of project that supports children who are inaccessible to education, or I will launch such a program in the future when I have a well-defined plan. The manga I like most is *Space Brother*.
 
 ## Contact
 Email: 21tung.vd@vinuni.edu.vn
