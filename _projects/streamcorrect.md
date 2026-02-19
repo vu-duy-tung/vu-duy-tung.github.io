@@ -41,5 +41,4 @@ The project includes:
 
 StreamCorrect provides real-time error correction for streaming ASR, significantly improving transcription quality compared to standard streaming approaches. The system maintains low latency while achieving near-offline ASR performance.
 
-
 For detailed usage, training instructions, and model checkpoints, visit the [GitHub repository](https://github.com/vu-duy-tung/StreamCorrect).

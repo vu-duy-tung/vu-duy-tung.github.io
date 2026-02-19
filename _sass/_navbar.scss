@@ -5,7 +5,7 @@
 @use "variables" as v;
 
 .navbar {
-  box-shadow: 
+  box-shadow:
     0 1px 3px rgba(0, 0, 0, 0.05),
     0 10px 40px -15px color-mix(in srgb, var(--global-text-color) 35%, transparent);
   border-bottom: 1px solid color-mix(in srgb, var(--global-divider-color) 60%, transparent);
@@ -26,7 +26,7 @@
   background-color: color-mix(in srgb, var(--global-bg-color) 96%, transparent);
   border: 1px solid color-mix(in srgb, var(--global-divider-color) 50%, transparent);
   border-radius: 1rem;
-  box-shadow: 
+  box-shadow:
     0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 20px 50px -15px color-mix(in srgb, var(--global-text-color) 40%, transparent);
   padding: 0.6rem;
@@ -99,7 +99,7 @@
     overflow: hidden;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
@@ -118,7 +118,7 @@
 
     &:hover {
       transform: translateY(-2px);
-      
+
       &::before {
         opacity: 1;
       }
@@ -140,18 +140,13 @@
     overflow: hidden;
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       bottom: 0.3rem;
       left: 50%;
       width: 0;
       height: 2px;
-      background: linear-gradient(
-        90deg,
-        transparent,
-        var(--global-theme-color),
-        transparent
-      );
+      background: linear-gradient(90deg, transparent, var(--global-theme-color), transparent);
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       transform: translateX(-50%);
     }
@@ -160,7 +155,7 @@
       color: var(--global-hover-color);
       background-color: color-mix(in srgb, var(--global-theme-color) 10%, transparent);
       transform: translateY(-2px);
-      
+
       &::after {
         width: 70%;
       }
@@ -175,7 +170,7 @@
     );
     font-weight: 700;
     color: var(--global-theme-color);
-    box-shadow: 
+    box-shadow:
       inset 0 0 0 1px color-mix(in srgb, var(--global-theme-color) 40%, transparent),
       0 2px 8px color-mix(in srgb, var(--global-theme-color) 20%, transparent);
 

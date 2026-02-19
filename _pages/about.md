@@ -32,4 +32,3 @@ I am a senior Computer Science student at VinUniversity, actively engaged in res
 I love football and always miss the days when I used to play with the gang every day.
 
 The manga I like most is Space Brother. -->
-
