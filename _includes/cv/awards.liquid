@@ -21,6 +21,13 @@
                     </span>
                   </td>
                 </tr>
+                {% if entry.logo %}
+                <tr>
+                  <td>
+                    <img src="{{ entry.logo }}" alt="Organization logo" style="width: 75px; height: auto; margin-top: 0.5rem;">
+                  </td>
+                </tr>
+                {% endif %}
               </tbody>
             </table>
           </div>

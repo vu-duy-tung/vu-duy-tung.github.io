@@ -8,46 +8,49 @@
 <ul class="card-text font-weight-light list-group list-group-flush">
   {% for entry in entries %}
     <li class="list-group-item">
+      {% capture start_date %}
+        {% if entry.start_date %}{{ entry.start_date }}{% elsif entry.startDate %}{{ entry.startDate }}{% endif %}
+      {% endcapture %}
+      {% capture end_date %}
+        {% if entry.end_date %}{{ entry.end_date }}{% elsif entry.endDate %}{{ entry.endDate }}{% endif %}
+      {% endcapture %}
+
+      {% if start_date != '' %}
+        {% comment %} Extract year only from dates like "1933-01-01" or just use "1933" as is {% endcomment %}
+        {% assign startDate = start_date | split: '-' | first %}
+        {% assign endDate = end_date | split: '-' | first | default: 'Present' %}
+        {% assign date = startDate | append: ' - ' | append: endDate %}
+      {% else %}
+        {% assign date = '' %}
+      {% endif %}
+
+      {% capture location %}
+        {% if entry.location %}{{ entry.location }}{% endif %}
+      {% endcapture %}
+
+      <div class="row mb-2">
+        <div class="col-12">
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">{{ date }}</span>
+            </div>
+            {% if location != '' %}
+            <div class="text-right">
+              <span style="font-size: 0.9rem;">
+                <i class="fa-solid fa-location-dot"></i>
+                {{ location }}
+              </span>
+            </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
       <div class="row">
-        <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column">
-          {% capture start_date %}
-            {% if entry.start_date %}{{ entry.start_date }}{% elsif entry.startDate %}{{ entry.startDate }}{% endif %}
-          {% endcapture %}
-          {% capture end_date %}
-            {% if entry.end_date %}{{ entry.end_date }}{% elsif entry.endDate %}{{ entry.endDate }}{% endif %}
-          {% endcapture %}
-
-          {% if start_date != '' %}
-            {% comment %} Extract year only from dates like "1933-01-01" or just use "1933" as is {% endcomment %}
-            {% assign startDate = start_date | split: '-' | first %}
-            {% assign endDate = end_date | split: '-' | first | default: 'Present' %}
-            {% assign date = startDate | append: ' - ' | append: endDate %}
-          {% else %}
-            {% assign date = '' %}
+        <div class="col-xs-2 col-sm-2 col-md-2 text-center">
+          {% if entry.logo %}
+            <img src="{{ entry.logo }}" alt="Company logo" style="width: 75px; height: auto;">
           {% endif %}
-
-          <table class="table-cv">
-            <tbody>
-              <tr>
-                <td>
-                  <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">{{ date }}</span>
-                </td>
-              </tr>
-              {% capture location %}
-                {% if entry.location %}{{ entry.location }}{% endif %}
-              {% endcapture %}
-              {% if location != '' %}
-                <tr>
-                  <td>
-                    <p class="location">
-                      <i class="fa-solid fa-location-dot iconlocation"></i>
-                      {{ location }}
-                    </p>
-                  </td>
-                </tr>
-              {% endif %}
-            </tbody>
-          </table>
         </div>
         <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
           {% capture position_title %}

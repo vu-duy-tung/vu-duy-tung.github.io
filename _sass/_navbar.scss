@@ -5,16 +5,33 @@
 @use "variables" as v;
 
 .navbar {
-  box-shadow: none;
-  border-bottom: 1px solid var(--global-divider-color);
-  background-color: var(--global-bg-color);
-  opacity: 0.95;
+  box-shadow: 
+    0 1px 3px rgba(0, 0, 0, 0.05),
+    0 10px 40px -15px color-mix(in srgb, var(--global-text-color) 35%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--global-divider-color) 60%, transparent);
+  background-color: color-mix(in srgb, var(--global-bg-color) 88%, transparent);
+  backdrop-filter: blur(20px) saturate(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(140%);
+  opacity: 1;
+  min-height: 4.5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  .container {
+    gap: 0.75rem;
+  }
 }
 
 .navbar .dropdown-menu,
 .btn-group.dropdown .dropdown-menu {
-  background-color: var(--global-bg-color);
-  border: 1px solid var(--global-divider-color);
+  background-color: color-mix(in srgb, var(--global-bg-color) 96%, transparent);
+  border: 1px solid color-mix(in srgb, var(--global-divider-color) 50%, transparent);
+  border-radius: 1rem;
+  box-shadow: 
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 20px 50px -15px color-mix(in srgb, var(--global-text-color) 40%, transparent);
+  padding: 0.6rem;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 
   a:not(.active) {
     color: var(--global-text-color);
@@ -31,20 +48,32 @@
 
 .dropdown-item {
   color: var(--global-text-color);
+  border-radius: 0.7rem;
+  padding: 0.6rem 0.9rem;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 500;
 
   &:hover {
     color: var(--global-hover-color);
-    background-color: var(--global-bg-color);
+    background-color: color-mix(in srgb, var(--global-theme-color) 15%, transparent);
+    transform: translateX(4px);
   }
 }
 
 .dropdown-item.active,
 .dropdown-item:active {
-  background-color: var(--global-hover-color);
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--global-theme-color) 85%, transparent),
+    color-mix(in srgb, var(--global-theme-color) 70%, transparent)
+  );
   color: var(--global-hover-text-color) !important;
+  font-weight: 600;
+  box-shadow: 0 2px 8px color-mix(in srgb, var(--global-theme-color) 30%, transparent);
 
   &:hover {
     color: var(--global-hover-text-color);
+    transform: translateX(0);
   }
 }
 
@@ -57,23 +86,106 @@
 
   .navbar-brand {
     color: var(--global-text-color);
+    letter-spacing: 0.02em;
+    font-size: clamp(1.1rem, 1rem + 0.5vw, 1.35rem);
+    font-weight: 600;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    border-radius: 999px;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(
+        135deg,
+        color-mix(in srgb, var(--global-theme-color) 15%, transparent),
+        color-mix(in srgb, var(--global-theme-color) 8%, transparent)
+      );
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      border-radius: 999px;
+      z-index: -1;
+    }
+
+    &:hover {
+      transform: translateY(-2px);
+      
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+
+  .navbar-nav {
+    gap: 0.4rem;
   }
 
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
+    border-radius: 999px;
+    padding: 0.55rem 1rem;
+    font-weight: 500;
+    line-height: 1.2;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0.3rem;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(
+        90deg,
+        transparent,
+        var(--global-theme-color),
+        transparent
+      );
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      transform: translateX(-50%);
+    }
 
     &:hover {
       color: var(--global-hover-color);
+      background-color: color-mix(in srgb, var(--global-theme-color) 10%, transparent);
+      transform: translateY(-2px);
+      
+      &::after {
+        width: 70%;
+      }
     }
   }
 
   .navbar-nav .nav-item.active > .nav-link {
-    background-color: inherit;
-    font-weight: bolder;
+    background: linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--global-theme-color) 22%, transparent),
+      color-mix(in srgb, var(--global-theme-color) 15%, transparent)
+    );
+    font-weight: 700;
     color: var(--global-theme-color);
+    box-shadow: 
+      inset 0 0 0 1px color-mix(in srgb, var(--global-theme-color) 40%, transparent),
+      0 2px 8px color-mix(in srgb, var(--global-theme-color) 20%, transparent);
+
+    &::after {
+      display: none;
+    }
 
     &:hover {
-      color: var(--global-hover-color);
+      color: var(--global-theme-color);
+      transform: translateY(-1px);
     }
   }
 
@@ -116,9 +228,26 @@
 }
 
 .navbar-toggler {
+  border: 1px solid color-mix(in srgb, var(--global-divider-color) 80%, transparent);
+  border-radius: 0.8rem;
+  padding: 0.47rem 0.55rem;
+  min-width: 2.45rem;
+  min-height: 2.4rem;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: color-mix(in srgb, var(--global-theme-color) 11%, transparent);
+    border-color: color-mix(in srgb, var(--global-theme-color) 35%, transparent);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem color-mix(in srgb, var(--global-theme-color) 18%, transparent);
+  }
+
   .icon-bar {
     display: block;
-    width: 22px;
+    width: 20px;
     height: 2px;
     background-color: var(--global-text-color);
     border-radius: 1px;
@@ -157,8 +286,8 @@
 
 #light-toggle {
   padding: 0;
-  border: 0;
-  background-color: inherit;
+  border: 1px solid color-mix(in srgb, var(--global-divider-color) 80%, transparent);
+  background-color: color-mix(in srgb, var(--global-bg-color) 90%, transparent);
   color: var(--global-text-color);
   /* Fix footprint to prevent navbar shifting when icon changes */
   width: 2rem;
@@ -166,9 +295,13 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  border-radius: 999px;
+  transition: all 0.2s ease;
 
   &:hover {
     color: var(--global-hover-color);
+    border-color: color-mix(in srgb, var(--global-theme-color) 35%, transparent);
+    background-color: color-mix(in srgb, var(--global-theme-color) 14%, transparent);
   }
 }
 
@@ -184,7 +317,44 @@
   background-color: inherit;
   color: var(--global-text-color);
 
+  .nav-link {
+    padding: 0.42rem 0.76rem;
+    border: 1px solid color-mix(in srgb, var(--global-divider-color) 80%, transparent);
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    line-height: 1;
+    opacity: 0.92;
+    transition: all 0.2s ease;
+  }
+
   &:hover {
     color: var(--global-hover-color);
+
+    .nav-link {
+      border-color: color-mix(in srgb, var(--global-theme-color) 35%, transparent);
+      background-color: color-mix(in srgb, var(--global-theme-color) 10%, transparent);
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .navbar .container {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+  }
+
+  .navbar.navbar-light .navbar-nav {
+    gap: 0.35rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.2rem;
+  }
+
+  .navbar.navbar-light .navbar-nav .nav-item .nav-link {
+    border-radius: 0.8rem;
+    padding: 0.5rem 0.72rem;
   }
 }
