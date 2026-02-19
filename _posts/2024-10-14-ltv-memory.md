@@ -15,7 +15,7 @@ Trong lúc ngồi lọc đống ảnh trong album điện thoại, mình có vô
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="https://vu-duy-tung.github.io/images/anhlop.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="https://raw.githubusercontent.com/vu-duy-tung/vu-duy-tung.github.io/b200226/images/anhlop.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -23,7 +23,7 @@ Mình là học sinh lớp chuyên Tin khóa 18 của trường. Tính đến th
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="https://vu-duy-tung.github.io/images/hanhlang.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="https://raw.githubusercontent.com/vu-duy-tung/vu-duy-tung.github.io/b200226/images/hanhlang.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -31,7 +31,7 @@ Mình là học sinh lớp chuyên Tin khóa 18 của trường. Tính đến th
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="https://vu-duy-tung.github.io/images/kiyeu.jpeg" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="https://raw.githubusercontent.com/vu-duy-tung/vu-duy-tung.github.io/b200226/images/kiyeu.jpeg" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -39,7 +39,7 @@ Mình là học sinh lớp chuyên Tin khóa 18 của trường. Tính đến th
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="https://vu-duy-tung.github.io/images/thi_online.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="https://raw.githubusercontent.com/vu-duy-tung/vu-duy-tung.github.io/b200226/images/thi_online.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -47,7 +47,7 @@ Mình là học sinh lớp chuyên Tin khóa 18 của trường. Tính đến th
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="https://vu-duy-tung.github.io/images/qua_chi_phung.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="https://raw.githubusercontent.com/vu-duy-tung/vu-duy-tung.github.io/b200226/images/qua_chi_phung.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -55,7 +55,7 @@ Hồi đấy chị Phụng có về dạy môn Văn cho lớp mình mấy buổi
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="https://vu-duy-tung.github.io/images/message.JPG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="https://raw.githubusercontent.com/vu-duy-tung/vu-duy-tung.github.io/b200226/images/message.JPG" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -63,7 +63,7 @@ Cũng vì COVID mà ngay trong tuần tổ chức Hạ Vũ, trường phải cho
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="https://vu-duy-tung.github.io/images/nha_thay_bao.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="https://raw.githubusercontent.com/vu-duy-tung/vu-duy-tung.github.io/b200226/images/nha_thay_bao.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -71,13 +71,13 @@ Cũng vì COVID mà ngay trong tuần tổ chức Hạ Vũ, trường phải cho
 
 <div class="row mt-3">
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="https://vu-duy-tung.github.io/images/hocba.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="https://raw.githubusercontent.com/vu-duy-tung/vu-duy-tung.github.io/b200226/images/hocba.png" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="https://vu-duy-tung.github.io/images/ruathau.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="https://raw.githubusercontent.com/vu-duy-tung/vu-duy-tung.github.io/b200226/images/ruathau.png" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="https://vu-duy-tung.github.io/images/gau_bong.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="https://raw.githubusercontent.com/vu-duy-tung/vu-duy-tung.github.io/b200226/images/gau_bong.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -86,6 +86,6 @@ Cũng vì COVID mà ngay trong tuần tổ chức Hạ Vũ, trường phải cho
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="https://vu-duy-tung.github.io/images/the_anh_lop.JPG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="https://raw.githubusercontent.com/vu-duy-tung/vu-duy-tung.github.io/b200226/images/the_anh_lop.JPG" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
