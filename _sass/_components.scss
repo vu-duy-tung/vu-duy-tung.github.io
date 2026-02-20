@@ -144,6 +144,12 @@ ul.task-list input[type="checkbox"] {
   // On mobile, don't pull up - let it flow naturally below header
   margin-top: 1rem;
   margin-bottom: 1rem;
+  // Disable float on mobile to prevent overlap
+  float: none !important;
+  width: 100%;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header-profile-container {
@@ -198,6 +204,10 @@ ul.task-list input[type="checkbox"] {
   .profile-custom {
     width: 30%;
     margin-top: -88px; // Pull up to align with name only on desktop
+    // Re-enable float on desktop
+    float: right !important;
+    margin-left: 1rem;
+    margin-right: 0;
   }
 
   .profile.float-right {
