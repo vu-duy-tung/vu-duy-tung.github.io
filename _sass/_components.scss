@@ -141,7 +141,9 @@ ul.task-list input[type="checkbox"] {
 }
 
 .profile-custom {
-  margin-top: -88px; // Pull up to align with name
+  // On mobile, don't pull up - let it flow naturally below header
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .header-profile-container {
@@ -175,11 +177,11 @@ ul.task-list input[type="checkbox"] {
 }
 
 .profile.float-right {
-  margin-left: 1rem;
+  margin-left: 0; // Remove margin on mobile
 }
 
 .profile.float-left {
-  margin-right: 1rem;
+  margin-right: 0; // Remove margin on mobile
 }
 
 @media (min-width: 576px) {
@@ -195,6 +197,15 @@ ul.task-list input[type="checkbox"] {
 
   .profile-custom {
     width: 30%;
+    margin-top: -88px; // Pull up to align with name only on desktop
+  }
+
+  .profile.float-right {
+    margin-left: 1rem; // Add margin back on desktop
+  }
+
+  .profile.float-left {
+    margin-right: 1rem; // Add margin back on desktop
   }
 
   .header-profile-container {
