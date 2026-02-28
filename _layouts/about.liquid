@@ -76,6 +76,14 @@ layout: default
       {% include latest_posts.liquid %}
     {% endif %}
 
+    <!-- Miscellaneous -->
+    {% if page.miscellaneous and page.miscellaneous.enabled %}
+      <h2 class="section-title">Miscellaneous</h2>
+      <div class="miscellaneous-content">
+        {{ page.miscellaneous.content }}
+      </div>
+    {% endif %}
+
     <!-- Social -->
     {% if page.social %}
       <div class="social">
