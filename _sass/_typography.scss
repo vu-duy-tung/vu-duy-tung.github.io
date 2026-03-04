@@ -6,11 +6,31 @@
 
 // Global font: GitHub-style system font stack — renders as SF Pro on Mac,
 // Segoe UI on Windows, Roboto on Android. Zero loading time, perfect hinting.
+// MDB (mdbootstrap) sets body { font-family: "Roboto"; font-weight: 300 } which
+// makes text look thin. We override everything here with !important to guarantee
+// our styles win over Bootstrap + MDB.
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
   line-height: 1.5;
   color: #24292e;
+}
+
+// Match reference site: headings use font-weight 600
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+// Bold text: match GitHub Primer CSS (font-weight 600, not browser default 700)
+b,
+strong {
+  font-weight: 600;
 }
 
 // Code: JetBrains Mono — excellent legibility for code
