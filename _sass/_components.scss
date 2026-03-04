@@ -159,30 +159,6 @@ ul.task-list input[type="checkbox"] {
   margin-right: auto;
 }
 
-.header-profile-container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 2rem;
-
-  .profile-inline {
-    flex-shrink: 0;
-    order: 2;
-    width: 100%;
-    max-width: 180px;
-
-    img {
-      width: 100%;
-      height: auto;
-    }
-  }
-
-  .title-container {
-    flex: 1;
-    order: 1;
-  }
-}
-
 .more-info-section {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -190,11 +166,11 @@ ul.task-list input[type="checkbox"] {
 }
 
 .profile.float-right {
-  margin-left: 0; // Remove margin on mobile
+  margin-left: 0;
 }
 
 .profile.float-left {
-  margin-right: 0; // Remove margin on mobile
+  margin-right: 0;
 }
 
 @media (min-width: 576px) {
@@ -211,18 +187,26 @@ ul.task-list input[type="checkbox"] {
   .profile-custom {
     width: 30%;
     margin-top: -88px; // Pull up to align with name only on desktop
-    // Re-enable float on desktop
-    float: right !important;
-    margin-left: 1rem;
+    margin-left: 0;
     margin-right: 0;
   }
 
+  .profile-custom.float-left {
+    float: left !important;
+    margin-right: 1.5rem;
+  }
+
+  .profile-custom.float-right {
+    float: right !important;
+    margin-left: 1.5rem;
+  }
+
   .profile.float-right {
-    margin-left: 1rem; // Add margin back on desktop
+    margin-left: 1rem;
   }
 
   .profile.float-left {
-    margin-right: 1rem; // Add margin back on desktop
+    margin-right: 1rem;
   }
 
   .header-profile-container {
