@@ -4,6 +4,28 @@
 
 @use "variables" as v;
 
+// Global font: Inter — clean, modern, screen-optimized
+body {
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11"; // Inter stylistic alternates
+  -webkit-font-smoothing: antialiased;
+}
+
+// Code: JetBrains Mono — excellent legibility for code
+code,
+pre,
+kbd,
+samp,
+tt {
+  font-family: "JetBrains Mono", "Fira Code", "Consolas", monospace;
+  font-size: 0.9em;
+}
+
 p,
 h1,
 h2,
