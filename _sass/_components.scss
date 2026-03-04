@@ -148,15 +148,17 @@ ul.task-list input[type="checkbox"] {
 }
 
 .profile-custom {
-  // On mobile, don't pull up - let it flow naturally below header
   margin-top: 1rem;
   margin-bottom: 1rem;
-  // Disable float on mobile to prevent overlap
-  float: none !important;
   width: 100%;
   max-width: 300px;
   margin-left: auto;
   margin-right: auto;
+  // On mobile, override Bootstrap float utility
+  &.float-left,
+  &.float-right {
+    float: none !important;
+  }
 }
 
 .more-info-section {
@@ -165,11 +167,11 @@ ul.task-list input[type="checkbox"] {
   font-family: monospace;
 }
 
-.profile.float-right {
+.profile.float-right:not(.profile-custom) {
   margin-left: 0;
 }
 
-.profile.float-left {
+.profile.float-left:not(.profile-custom) {
   margin-right: 0;
 }
 
@@ -186,26 +188,26 @@ ul.task-list input[type="checkbox"] {
 
   .profile-custom {
     width: 30%;
-    margin-top: 0; // Profile stays below the centered name/subtitle
-    margin-left: 0;
-    margin-right: 0;
+    margin-top: 0;
   }
 
   .profile-custom.float-left {
     float: left !important;
+    margin-left: 0;
     margin-right: 1.5rem;
   }
 
   .profile-custom.float-right {
     float: right !important;
+    margin-right: 0;
     margin-left: 1.5rem;
   }
 
-  .profile.float-right {
+  .profile.float-right:not(.profile-custom) {
     margin-left: 1rem;
   }
 
-  .profile.float-left {
+  .profile.float-left:not(.profile-custom) {
     margin-right: 1rem;
   }
 
