@@ -41,8 +41,7 @@ on:
 jobs:
   link-checker:
     runs-on: ubuntu-latest
-    # only run on the main repo
-    if: github.repository == 'alshedivat/al-folio'
+    if: github.repository == 'vu-duy-tung/vu-duy-tung.github.io'
     steps:
       - uses: actions/checkout@v4
 
