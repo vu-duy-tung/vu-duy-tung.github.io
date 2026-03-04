@@ -8,8 +8,8 @@
   color-scheme: light;
   --global-bg-color: #f8f9fb; // Near-white with a faint blue-grey tint
   --global-code-bg-color: #eef1f7; // Very light blue-grey for code blocks
-  --global-text-color: #1a1f2e; // Deep navy-black for main text
-  --global-text-color-light: #5a6580; // Muted blue-grey for secondary text
+  --global-text-color: #24292e; // GitHub-style dark text — proven readability
+  --global-text-color-light: #586069; // GitHub secondary text
   --global-theme-color: #{v.$blue-color-dark}; // #00369f — deep navy accent
   --global-hover-color: #{v.$blue-color-dark};
   --global-hover-text-color: #{v.$white-color};
