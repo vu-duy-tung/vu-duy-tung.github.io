@@ -186,7 +186,7 @@ ul.task-list input[type="checkbox"] {
 
   .profile-custom {
     width: 30%;
-    margin-top: -88px; // Pull up to align with name only on desktop
+    margin-top: 0; // Profile stays below the centered name/subtitle
     margin-left: 0;
     margin-right: 0;
   }
