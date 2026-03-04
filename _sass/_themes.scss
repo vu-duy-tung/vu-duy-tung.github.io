@@ -6,18 +6,18 @@
 
 :root {
   color-scheme: light;
-  --global-bg-color: #f0f7f4; // Soft mint-white — fresh, clean, pairs with green
-  --global-code-bg-color: #e6f4ee; // Light green tint for code blocks
-  --global-text-color: #1a2e1f; // Deep forest green-black for main text
-  --global-text-color-light: #5a7a65; // Muted sage for secondary text
-  --global-theme-color: #{v.$green-color-dark}; // #009f06 — rich green accent
-  --global-hover-color: #{v.$green-color-dark};
+  --global-bg-color: #f8f9fb; // Near-white with a faint blue-grey tint
+  --global-code-bg-color: #eef1f7; // Very light blue-grey for code blocks
+  --global-text-color: #1a1f2e; // Deep navy-black for main text
+  --global-text-color-light: #5a6580; // Muted blue-grey for secondary text
+  --global-theme-color: #{v.$blue-color-dark}; // #00369f — deep navy accent
+  --global-hover-color: #{v.$blue-color-dark};
   --global-hover-text-color: #{v.$white-color};
-  --global-footer-bg-color: #1a2e1f; // Deep forest footer
+  --global-footer-bg-color: #1a1f2e; // Deep navy footer
   --global-footer-text-color: #{v.$grey-color-light};
   --global-footer-link-color: #{v.$white-color};
   --global-distill-app-color: #{v.$grey-color};
-  --global-divider-color: rgba(0, 159, 6, 0.12); // Faint green divider
+  --global-divider-color: rgba(0, 54, 159, 0.1); // Faint navy divider
   --global-card-bg-color: #ffffff; // White cards for clean contrast
   --global-highlight-color: #{v.$red-color-dark};
   --global-back-to-top-bg-color: rgba(
