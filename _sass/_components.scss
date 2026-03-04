@@ -95,6 +95,25 @@ ul.task-list input[type="checkbox"] {
       margin: 0;
     }
   }
+
+  // Modern circular profile picture styling
+  img.rounded-circle {
+    padding: 3px; // Space between image and gradient ring
+    background: linear-gradient(135deg, var(--global-theme-color), color-mix(in srgb, var(--global-theme-color) 40%, #a0c4ff));
+    box-shadow:
+      0 6px 24px color-mix(in srgb, var(--global-theme-color) 25%, transparent),
+      0 2px 8px rgba(0, 0, 0, 0.12);
+    transition:
+      box-shadow 0.3s ease,
+      transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.03);
+      box-shadow:
+        0 10px 32px color-mix(in srgb, var(--global-theme-color) 35%, transparent),
+        0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+  }
 }
 
 .profile-image-caption {

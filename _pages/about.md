@@ -7,7 +7,7 @@ subtitle: <a href='#'>CS @ VinUni'26</a>
 profile:
   align: left
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info: >
     <p>A moment at The 2024 VinFuture Prize</p>
 
