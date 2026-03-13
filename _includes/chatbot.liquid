@@ -441,7 +441,9 @@
         var state = JSON.parse(saved);
         if (state.messages && state.messages.length > 0) {
           chatMessages = state.messages;
+          var welcome = messagesContainer.firstElementChild;
           messagesContainer.innerHTML = '';
+          if (welcome) messagesContainer.appendChild(welcome);
           for (var i = 0; i < chatMessages.length; i++) {
             var role = chatMessages[i].role === 'assistant' ? 'bot' : 'user';
             appendMessageToDOM(role, chatMessages[i].content);
