@@ -85,8 +85,13 @@
     align-items: center;
     justify-content: space-between;
     padding: 14px 16px;
-    background: linear-gradient(135deg, #1a1f2e, #2a3245);
+    background: linear-gradient(135deg, var(--global-theme-color), color-mix(in srgb, var(--global-theme-color) 70%, #4a90d9));
     color: #fff;
+  }
+
+  #chatbot-header strong,
+  #chatbot-header small {
+    color: #fff !important;
   }
 
   #chatbot-header-info {
