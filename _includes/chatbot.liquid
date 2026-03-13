@@ -260,15 +260,16 @@
 
 <script>
 (function() {
-  const WORKER_URL = "{{ site.chatbot_worker_url | default: '' }}";
-  const chatMessages = [];
+  var WORKER_URL = "{{ site.chatbot_worker_url | default: '' }}";
+  var chatMessages = [];
+  var isSending = false;
 
-  const toggleBtn = document.getElementById("chatbot-toggle");
-  const chatWindow = document.getElementById("chatbot-window");
-  const closeBtn = document.getElementById("chatbot-close");
-  const input = document.getElementById("chatbot-input");
-  const sendBtn = document.getElementById("chatbot-send");
-  const messagesContainer = document.getElementById("chatbot-messages");
+  var toggleBtn = document.getElementById("chatbot-toggle");
+  var chatWindow = document.getElementById("chatbot-window");
+  var closeBtn = document.getElementById("chatbot-close");
+  var input = document.getElementById("chatbot-input");
+  var sendBtn = document.getElementById("chatbot-send");
+  var messagesContainer = document.getElementById("chatbot-messages");
 
   toggleBtn.addEventListener("click", function() {
     chatWindow.classList.toggle("open");
@@ -288,7 +289,10 @@
     }
   });
 
-  sendBtn.addEventListener("click", sendMessage);
+  sendBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+    sendMessage();
+  });
 
   function appendMessage(role, text) {
     var div = document.createElement("div");
@@ -315,39 +319,42 @@
     if (el) el.remove();
   }
 
-  async function sendMessage() {
+  function sendMessage() {
+    if (isSending) return;
     var text = input.value.trim();
     if (!text || !WORKER_URL) return;
 
+    isSending = true;
     appendMessage("user", text);
     chatMessages.push({ role: "user", content: text });
     input.value = "";
     sendBtn.disabled = true;
     showTyping();
 
-    try {
-      var res = await fetch(WORKER_URL, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ messages: chatMessages }),
-      });
-
-      var data = await res.json();
+    fetch(WORKER_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ messages: chatMessages })
+    })
+    .then(function(res) { return res.json(); })
+    .then(function(data) {
       hideTyping();
-
       if (data.error) {
         appendMessage("bot", data.error);
       } else {
         appendMessage("bot", data.reply);
         chatMessages.push({ role: "assistant", content: data.reply });
       }
-    } catch (err) {
+    })
+    .catch(function(err) {
       hideTyping();
       appendMessage("bot", "Oops, something went wrong. Please try again later.");
-    }
-
-    sendBtn.disabled = false;
-    input.focus();
+    })
+    .finally(function() {
+      isSending = false;
+      sendBtn.disabled = false;
+      input.focus();
+    });
   }
 })();
 </script>
