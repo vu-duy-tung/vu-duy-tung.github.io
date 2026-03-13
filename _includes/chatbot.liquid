@@ -10,7 +10,7 @@
       <span id="chatbot-avatar">✨</span>
       <div>
         <strong>Omni</strong>
-        <small>Mino's AI buddy</small>
+        <small>Tung's representative</small>
       </div>
     </div>
     <button id="chatbot-close" aria-label="Close chat">&times;</button>
@@ -85,7 +85,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 14px 16px;
-    background: linear-gradient(135deg, var(--global-theme-color), color-mix(in srgb, var(--global-theme-color) 70%, #4a90d9));
+    background: linear-gradient(135deg, #1a1f2e, #2a3245);
     color: #fff;
   }
 
@@ -159,6 +159,15 @@
     color: var(--global-text-color);
     border-bottom-left-radius: 4px;
   }
+
+  .chatbot-msg.bot .chatbot-bubble p { margin: 0 0 0.4em 0; }
+  .chatbot-msg.bot .chatbot-bubble p:last-child { margin-bottom: 0; }
+  .chatbot-msg.bot .chatbot-bubble strong { font-weight: 600; }
+  .chatbot-msg.bot .chatbot-bubble em { font-style: italic; }
+  .chatbot-msg.bot .chatbot-bubble code { background: rgba(0,0,0,0.06); padding: 1px 4px; border-radius: 3px; font-size: 0.85em; }
+  .chatbot-msg.bot .chatbot-bubble a { color: var(--global-theme-color); text-decoration: underline; }
+  .chatbot-msg.bot .chatbot-bubble ul, .chatbot-msg.bot .chatbot-bubble ol { margin: 0.3em 0; padding-left: 1.2em; }
+  .chatbot-msg.bot .chatbot-bubble li { margin-bottom: 0.15em; }
 
   .chatbot-msg.user .chatbot-bubble {
     background: linear-gradient(135deg, var(--global-theme-color), color-mix(in srgb, var(--global-theme-color) 70%, #4a90d9));
@@ -294,12 +303,30 @@
     sendMessage();
   });
 
+  function renderMarkdown(text) {
+    var html = text
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+      .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+      .replace(/\*(.+?)\*/g, "<em>$1</em>")
+      .replace(/`(.+?)`/g, "<code>$1</code>")
+      .replace(/\[([^\]]+)\]\((https?:\/\/[^\)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>')
+      .replace(/^[\-\*] (.+)/gm, "<li>$1</li>")
+      .replace(/(<li>.*<\/li>)/s, "<ul>$1</ul>")
+      .replace(/\n{2,}/g, "</p><p>")
+      .replace(/\n/g, "<br>");
+    return "<p>" + html + "</p>";
+  }
+
   function appendMessage(role, text) {
     var div = document.createElement("div");
     div.className = "chatbot-msg " + role;
     var bubble = document.createElement("div");
     bubble.className = "chatbot-bubble";
-    bubble.textContent = text;
+    if (role === "bot") {
+      bubble.innerHTML = renderMarkdown(text);
+    } else {
+      bubble.textContent = text;
+    }
     div.appendChild(bubble);
     messagesContainer.appendChild(div);
     messagesContainer.scrollTop = messagesContainer.scrollHeight;
