@@ -1,11 +1,21 @@
 <div id="chatbot-toggle" title="Chat with Omni">
-  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="28"
+    height="28"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
     <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
   </svg>
 </div>
 
 <div id="chatbot-callout">
-  <span>Hi, I'm <strong>Omni</strong>! 👋</span>
+  <span>Hi, I'm <strong class="callout-name">Omni</strong>! 👋</span>
   <div id="chatbot-callout-tail"></div>
 </div>
 
@@ -22,7 +32,10 @@
   </div>
   <div id="chatbot-messages">
     <div class="chatbot-msg bot">
-      <div class="chatbot-bubble">Hey! I'm Omni, Tung's AI buddy. Ask me anything about him — research, hobbies, whatever! If you want to chat with the real Tung, I can point you to his contacts too.</div>
+      <div class="chatbot-bubble">
+        Hey! I'm Omni, Tung's AI buddy. Ask me anything about him — research, hobbies, whatever! If you want to chat with the real Tung, I can point
+        you to his contacts too.
+      </div>
     </div>
   </div>
   <div id="chatbot-input-area">
@@ -49,14 +62,16 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
     z-index: 1000;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
   }
 
   #chatbot-toggle:hover {
     transform: scale(1.1);
-    box-shadow: 0 6px 24px rgba(0,0,0,0.3);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
   }
 
   #chatbot-window {
@@ -68,7 +83,7 @@
     border-radius: 16px;
     background-color: var(--global-bg-color);
     border: 1px solid var(--global-divider-color);
-    box-shadow: 0 12px 48px rgba(0,0,0,0.15);
+    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.15);
     display: none;
     flex-direction: column;
     z-index: 1001;
@@ -77,8 +92,14 @@
   }
 
   @keyframes chatbot-slide-up {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   #chatbot-window.open {
@@ -170,14 +191,36 @@
     border-bottom-left-radius: 4px;
   }
 
-  .chatbot-msg.bot .chatbot-bubble p { margin: 0 0 0.4em 0; }
-  .chatbot-msg.bot .chatbot-bubble p:last-child { margin-bottom: 0; }
-  .chatbot-msg.bot .chatbot-bubble strong { font-weight: 600; }
-  .chatbot-msg.bot .chatbot-bubble em { font-style: italic; }
-  .chatbot-msg.bot .chatbot-bubble code { background: rgba(0,0,0,0.06); padding: 1px 4px; border-radius: 3px; font-size: 0.85em; }
-  .chatbot-msg.bot .chatbot-bubble a { color: var(--global-theme-color); text-decoration: underline; }
-  .chatbot-msg.bot .chatbot-bubble ul, .chatbot-msg.bot .chatbot-bubble ol { margin: 0.3em 0; padding-left: 1.2em; }
-  .chatbot-msg.bot .chatbot-bubble li { margin-bottom: 0.15em; }
+  .chatbot-msg.bot .chatbot-bubble p {
+    margin: 0 0 0.4em 0;
+  }
+  .chatbot-msg.bot .chatbot-bubble p:last-child {
+    margin-bottom: 0;
+  }
+  .chatbot-msg.bot .chatbot-bubble strong {
+    font-weight: 600;
+  }
+  .chatbot-msg.bot .chatbot-bubble em {
+    font-style: italic;
+  }
+  .chatbot-msg.bot .chatbot-bubble code {
+    background: rgba(0, 0, 0, 0.06);
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 0.85em;
+  }
+  .chatbot-msg.bot .chatbot-bubble a {
+    color: var(--global-theme-color);
+    text-decoration: underline;
+  }
+  .chatbot-msg.bot .chatbot-bubble ul,
+  .chatbot-msg.bot .chatbot-bubble ol {
+    margin: 0.3em 0;
+    padding-left: 1.2em;
+  }
+  .chatbot-msg.bot .chatbot-bubble li {
+    margin-bottom: 0.15em;
+  }
 
   .chatbot-msg.user .chatbot-bubble {
     background: linear-gradient(135deg, var(--global-theme-color), color-mix(in srgb, var(--global-theme-color) 70%, #4a90d9));
@@ -200,12 +243,24 @@
     animation: chatbot-bounce 1.4s infinite both;
   }
 
-  .chatbot-dot:nth-child(2) { animation-delay: 0.2s; }
-  .chatbot-dot:nth-child(3) { animation-delay: 0.4s; }
+  .chatbot-dot:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .chatbot-dot:nth-child(3) {
+    animation-delay: 0.4s;
+  }
 
   @keyframes chatbot-bounce {
-    0%, 80%, 100% { transform: scale(0.6); opacity: 0.4; }
-    40% { transform: scale(1); opacity: 1; }
+    0%,
+    80%,
+    100% {
+      transform: scale(0.6);
+      opacity: 0.4;
+    }
+    40% {
+      transform: scale(1);
+      opacity: 1;
+    }
   }
 
   #chatbot-input-area {
@@ -247,7 +302,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.2s, opacity 0.2s;
+    transition:
+      transform 0.2s,
+      opacity 0.2s;
     flex-shrink: 0;
   }
 
@@ -265,18 +322,23 @@
     position: fixed;
     bottom: 128px;
     right: 96px;
-    background: #fff;
-    color: #333;
+    background: #1a1f2e;
+    color: #e8e8e8;
     padding: 8px 14px;
     border-radius: 12px;
     font-size: 0.88rem;
     font-weight: 500;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.15);
-    border: 2px solid #222;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+    border: 2px solid #333;
     z-index: 1000;
     white-space: nowrap;
     animation: chatbot-callout-in 0.5s ease both;
     transition: opacity 0.6s ease;
+  }
+
+  #chatbot-callout .callout-name {
+    color: #5bb8ff;
+    font-weight: 700;
   }
 
   #chatbot-callout-tail {
@@ -287,11 +349,11 @@
     height: 0;
     border-top: 8px solid transparent;
     border-bottom: 8px solid transparent;
-    border-left: 10px solid #222;
+    border-left: 10px solid #333;
   }
 
   #chatbot-callout-tail::after {
-    content: "";
+    content: '';
     position: absolute;
     right: 2px;
     top: -7px;
@@ -299,7 +361,7 @@
     height: 0;
     border-top: 7px solid transparent;
     border-bottom: 7px solid transparent;
-    border-left: 9px solid #fff;
+    border-left: 9px solid #1a1f2e;
   }
 
   #chatbot-callout.fade-out {
@@ -307,8 +369,14 @@
   }
 
   @keyframes chatbot-callout-in {
-    from { opacity: 0; transform: translateX(10px); }
-    to { opacity: 1; transform: translateX(0); }
+    from {
+      opacity: 0;
+      transform: translateX(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 
   @media (max-width: 480px) {
@@ -335,173 +403,183 @@
 </style>
 
 <script>
-(function() {
-  var WORKER_URL = "{{ site.chatbot_worker_url | default: '' }}";
-  var STORAGE_KEY = "omni_chat";
-  var chatMessages = [];
-  var isSending = false;
+  (function () {
+    var WORKER_URL = "{{ site.chatbot_worker_url | default: '' }}";
+    var STORAGE_KEY = 'omni_chat';
+    var chatMessages = [];
+    var isSending = false;
 
-  var toggleBtn = document.getElementById("chatbot-toggle");
-  var chatWindow = document.getElementById("chatbot-window");
-  var closeBtn = document.getElementById("chatbot-close");
-  var input = document.getElementById("chatbot-input");
-  var sendBtn = document.getElementById("chatbot-send");
-  var messagesContainer = document.getElementById("chatbot-messages");
+    var toggleBtn = document.getElementById('chatbot-toggle');
+    var chatWindow = document.getElementById('chatbot-window');
+    var closeBtn = document.getElementById('chatbot-close');
+    var input = document.getElementById('chatbot-input');
+    var sendBtn = document.getElementById('chatbot-send');
+    var messagesContainer = document.getElementById('chatbot-messages');
 
-  function saveState() {
-    try {
-      sessionStorage.setItem(STORAGE_KEY, JSON.stringify({
-        messages: chatMessages,
-        open: chatWindow.classList.contains("open")
-      }));
-    } catch(e) {}
-  }
-
-  function restoreState() {
-    try {
-      var saved = sessionStorage.getItem(STORAGE_KEY);
-      if (!saved) return;
-      var state = JSON.parse(saved);
-      if (state.messages && state.messages.length > 0) {
-        chatMessages = state.messages;
-        messagesContainer.innerHTML = "";
-        for (var i = 0; i < chatMessages.length; i++) {
-          var role = chatMessages[i].role === "assistant" ? "bot" : "user";
-          appendMessageToDOM(role, chatMessages[i].content);
-        }
-      }
-      if (state.open) chatWindow.classList.add("open");
-    } catch(e) {}
-  }
-
-  toggleBtn.addEventListener("click", function() {
-    chatWindow.classList.toggle("open");
-    if (chatWindow.classList.contains("open")) {
-      input.focus();
+    function saveState() {
+      try {
+        sessionStorage.setItem(
+          STORAGE_KEY,
+          JSON.stringify({
+            messages: chatMessages,
+            open: chatWindow.classList.contains('open'),
+          })
+        );
+      } catch (e) {}
     }
-    saveState();
-  });
 
-  closeBtn.addEventListener("click", function() {
-    chatWindow.classList.remove("open");
-    saveState();
-  });
+    function restoreState() {
+      try {
+        var saved = sessionStorage.getItem(STORAGE_KEY);
+        if (!saved) return;
+        var state = JSON.parse(saved);
+        if (state.messages && state.messages.length > 0) {
+          chatMessages = state.messages;
+          messagesContainer.innerHTML = '';
+          for (var i = 0; i < chatMessages.length; i++) {
+            var role = chatMessages[i].role === 'assistant' ? 'bot' : 'user';
+            appendMessageToDOM(role, chatMessages[i].content);
+          }
+        }
+        if (state.open) chatWindow.classList.add('open');
+      } catch (e) {}
+    }
 
-  input.addEventListener("keydown", function(e) {
-    if (e.key === "Enter" && !e.shiftKey) {
+    toggleBtn.addEventListener('click', function () {
+      chatWindow.classList.toggle('open');
+      if (chatWindow.classList.contains('open')) {
+        input.focus();
+      }
+      saveState();
+    });
+
+    closeBtn.addEventListener('click', function () {
+      chatWindow.classList.remove('open');
+      saveState();
+    });
+
+    input.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' && !e.shiftKey) {
+        e.preventDefault();
+        sendMessage();
+      }
+    });
+
+    sendBtn.addEventListener('click', function (e) {
       e.preventDefault();
       sendMessage();
+    });
+
+    function renderMarkdown(text) {
+      var html = text
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+        .replace(/\*(.+?)\*/g, '<em>$1</em>')
+        .replace(/`(.+?)`/g, '<code>$1</code>')
+        .replace(/\[([^\]]+)\]\((https?:\/\/[^\)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>')
+        .replace(/^[\-\*] (.+)/gm, '<li>$1</li>')
+        .replace(/(<li>.*<\/li>)/s, '<ul>$1</ul>')
+        .replace(/\n{2,}/g, '</p><p>')
+        .replace(/\n/g, '<br>');
+      return '<p>' + html + '</p>';
     }
-  });
 
-  sendBtn.addEventListener("click", function(e) {
-    e.preventDefault();
-    sendMessage();
-  });
-
-  function renderMarkdown(text) {
-    var html = text
-      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
-      .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
-      .replace(/\*(.+?)\*/g, "<em>$1</em>")
-      .replace(/`(.+?)`/g, "<code>$1</code>")
-      .replace(/\[([^\]]+)\]\((https?:\/\/[^\)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>')
-      .replace(/^[\-\*] (.+)/gm, "<li>$1</li>")
-      .replace(/(<li>.*<\/li>)/s, "<ul>$1</ul>")
-      .replace(/\n{2,}/g, "</p><p>")
-      .replace(/\n/g, "<br>");
-    return "<p>" + html + "</p>";
-  }
-
-  function appendMessageToDOM(role, text) {
-    var div = document.createElement("div");
-    div.className = "chatbot-msg " + role;
-    var bubble = document.createElement("div");
-    bubble.className = "chatbot-bubble";
-    if (role === "bot") {
-      bubble.innerHTML = renderMarkdown(text);
-    } else {
-      bubble.textContent = text;
-    }
-    div.appendChild(bubble);
-    messagesContainer.appendChild(div);
-    messagesContainer.scrollTop = messagesContainer.scrollHeight;
-  }
-
-  function appendMessage(role, text) {
-    appendMessageToDOM(role, text);
-  }
-
-  function showTyping() {
-    var div = document.createElement("div");
-    div.className = "chatbot-msg bot chatbot-typing";
-    div.id = "chatbot-typing-indicator";
-    div.innerHTML = '<div class="chatbot-bubble"><span class="chatbot-dot"></span><span class="chatbot-dot"></span><span class="chatbot-dot"></span></div>';
-    messagesContainer.appendChild(div);
-    messagesContainer.scrollTop = messagesContainer.scrollHeight;
-  }
-
-  function hideTyping() {
-    var el = document.getElementById("chatbot-typing-indicator");
-    if (el) el.remove();
-  }
-
-  function sendMessage() {
-    if (isSending) return;
-    var text = input.value.trim();
-    if (!text || !WORKER_URL) return;
-
-    isSending = true;
-    appendMessage("user", text);
-    chatMessages.push({ role: "user", content: text });
-    input.value = "";
-    sendBtn.disabled = true;
-    showTyping();
-
-    saveState();
-
-    fetch(WORKER_URL, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ messages: chatMessages })
-    })
-    .then(function(res) { return res.json(); })
-    .then(function(data) {
-      hideTyping();
-      if (data.error) {
-        appendMessage("bot", data.error);
+    function appendMessageToDOM(role, text) {
+      var div = document.createElement('div');
+      div.className = 'chatbot-msg ' + role;
+      var bubble = document.createElement('div');
+      bubble.className = 'chatbot-bubble';
+      if (role === 'bot') {
+        bubble.innerHTML = renderMarkdown(text);
       } else {
-        appendMessage("bot", data.reply);
-        chatMessages.push({ role: "assistant", content: data.reply });
-        saveState();
+        bubble.textContent = text;
       }
-    })
-    .catch(function(err) {
-      hideTyping();
-      appendMessage("bot", "Oops, something went wrong. Please try again later.");
-    })
-    .finally(function() {
-      isSending = false;
-      sendBtn.disabled = false;
-      input.focus();
-    });
-  }
-
-  restoreState();
-
-  var callout = document.getElementById("chatbot-callout");
-  if (callout) {
-    if (chatWindow.classList.contains("open")) {
-      callout.style.display = "none";
-    } else {
-      setTimeout(function() {
-        callout.classList.add("fade-out");
-        setTimeout(function() { callout.style.display = "none"; }, 600);
-      }, 5000);
+      div.appendChild(bubble);
+      messagesContainer.appendChild(div);
+      messagesContainer.scrollTop = messagesContainer.scrollHeight;
     }
-    toggleBtn.addEventListener("click", function() {
-      callout.style.display = "none";
-    });
-  }
-})();
+
+    function appendMessage(role, text) {
+      appendMessageToDOM(role, text);
+    }
+
+    function showTyping() {
+      var div = document.createElement('div');
+      div.className = 'chatbot-msg bot chatbot-typing';
+      div.id = 'chatbot-typing-indicator';
+      div.innerHTML =
+        '<div class="chatbot-bubble"><span class="chatbot-dot"></span><span class="chatbot-dot"></span><span class="chatbot-dot"></span></div>';
+      messagesContainer.appendChild(div);
+      messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+
+    function hideTyping() {
+      var el = document.getElementById('chatbot-typing-indicator');
+      if (el) el.remove();
+    }
+
+    function sendMessage() {
+      if (isSending) return;
+      var text = input.value.trim();
+      if (!text || !WORKER_URL) return;
+
+      isSending = true;
+      appendMessage('user', text);
+      chatMessages.push({ role: 'user', content: text });
+      input.value = '';
+      sendBtn.disabled = true;
+      showTyping();
+
+      saveState();
+
+      fetch(WORKER_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ messages: chatMessages }),
+      })
+        .then(function (res) {
+          return res.json();
+        })
+        .then(function (data) {
+          hideTyping();
+          if (data.error) {
+            appendMessage('bot', data.error);
+          } else {
+            appendMessage('bot', data.reply);
+            chatMessages.push({ role: 'assistant', content: data.reply });
+            saveState();
+          }
+        })
+        .catch(function (err) {
+          hideTyping();
+          appendMessage('bot', 'Oops, something went wrong. Please try again later.');
+        })
+        .finally(function () {
+          isSending = false;
+          sendBtn.disabled = false;
+          input.focus();
+        });
+    }
+
+    restoreState();
+
+    var callout = document.getElementById('chatbot-callout');
+    if (callout) {
+      if (chatWindow.classList.contains('open')) {
+        callout.style.display = 'none';
+      } else {
+        setTimeout(function () {
+          callout.classList.add('fade-out');
+          setTimeout(function () {
+            callout.style.display = 'none';
+          }, 600);
+        }, 5000);
+      }
+      toggleBtn.addEventListener('click', function () {
+        callout.style.display = 'none';
+      });
+    }
+  })();
 </script>
