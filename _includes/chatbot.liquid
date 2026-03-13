@@ -4,6 +4,11 @@
   </svg>
 </div>
 
+<div id="chatbot-callout">
+  <span>Hi, I'm <strong>Omni</strong>! 👋</span>
+  <div id="chatbot-callout-tail"></div>
+</div>
+
 <div id="chatbot-window">
   <div id="chatbot-header">
     <div id="chatbot-header-info">
@@ -256,6 +261,56 @@
     transform: none;
   }
 
+  #chatbot-callout {
+    position: fixed;
+    bottom: 128px;
+    right: 96px;
+    background: #fff;
+    color: #333;
+    padding: 8px 14px;
+    border-radius: 12px;
+    font-size: 0.88rem;
+    font-weight: 500;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+    border: 2px solid #222;
+    z-index: 1000;
+    white-space: nowrap;
+    animation: chatbot-callout-in 0.5s ease both;
+    transition: opacity 0.6s ease;
+  }
+
+  #chatbot-callout-tail {
+    position: absolute;
+    right: -10px;
+    bottom: 10px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 10px solid #222;
+  }
+
+  #chatbot-callout-tail::after {
+    content: "";
+    position: absolute;
+    right: 2px;
+    top: -7px;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 9px solid #fff;
+  }
+
+  #chatbot-callout.fade-out {
+    opacity: 0;
+  }
+
+  @keyframes chatbot-callout-in {
+    from { opacity: 0; transform: translateX(10px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
   @media (max-width: 480px) {
     #chatbot-window {
       right: 8px;
@@ -268,6 +323,13 @@
     #chatbot-toggle {
       bottom: 60px;
       right: 16px;
+    }
+
+    #chatbot-callout {
+      bottom: 78px;
+      right: 80px;
+      font-size: 0.82rem;
+      padding: 6px 12px;
     }
   }
 </style>
@@ -426,5 +488,20 @@
   }
 
   restoreState();
+
+  var callout = document.getElementById("chatbot-callout");
+  if (callout) {
+    if (chatWindow.classList.contains("open")) {
+      callout.style.display = "none";
+    } else {
+      setTimeout(function() {
+        callout.classList.add("fade-out");
+        setTimeout(function() { callout.style.display = "none"; }, 600);
+      }, 5000);
+    }
+    toggleBtn.addEventListener("click", function() {
+      callout.style.display = "none";
+    });
+  }
 })();
 </script>
