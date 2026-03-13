@@ -50,6 +50,11 @@
     <!-- Footer -->
     {% include footer.liquid %}
 
+    <!-- Chatbot -->
+    {% if site.chatbot_worker_url %}
+      {% include chatbot.liquid %}
+    {% endif %}
+
     <!-- JavaScripts -->
     {% include scripts.liquid %}
   </body>
