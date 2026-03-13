@@ -17,7 +17,7 @@
   </div>
   <div id="chatbot-messages">
     <div class="chatbot-msg bot">
-      <div class="chatbot-bubble">Hey! I'm Omni, Mino's AI buddy. Ask me anything about him — research, hobbies, whatever! If you want to chat with the real Mino, I can point you to his contacts too.</div>
+      <div class="chatbot-bubble">Hey! I'm Omni, Tung's AI buddy. Ask me anything about him — research, hobbies, whatever! If you want to chat with the real Mino, I can point you to his contacts too.</div>
     </div>
   </div>
   <div id="chatbot-input-area">
@@ -275,6 +275,7 @@
 <script>
 (function() {
   var WORKER_URL = "{{ site.chatbot_worker_url | default: '' }}";
+  var STORAGE_KEY = "omni_chat";
   var chatMessages = [];
   var isSending = false;
 
@@ -285,15 +286,43 @@
   var sendBtn = document.getElementById("chatbot-send");
   var messagesContainer = document.getElementById("chatbot-messages");
 
+  function saveState() {
+    try {
+      sessionStorage.setItem(STORAGE_KEY, JSON.stringify({
+        messages: chatMessages,
+        open: chatWindow.classList.contains("open")
+      }));
+    } catch(e) {}
+  }
+
+  function restoreState() {
+    try {
+      var saved = sessionStorage.getItem(STORAGE_KEY);
+      if (!saved) return;
+      var state = JSON.parse(saved);
+      if (state.messages && state.messages.length > 0) {
+        chatMessages = state.messages;
+        messagesContainer.innerHTML = "";
+        for (var i = 0; i < chatMessages.length; i++) {
+          var role = chatMessages[i].role === "assistant" ? "bot" : "user";
+          appendMessageToDOM(role, chatMessages[i].content);
+        }
+      }
+      if (state.open) chatWindow.classList.add("open");
+    } catch(e) {}
+  }
+
   toggleBtn.addEventListener("click", function() {
     chatWindow.classList.toggle("open");
     if (chatWindow.classList.contains("open")) {
       input.focus();
     }
+    saveState();
   });
 
   closeBtn.addEventListener("click", function() {
     chatWindow.classList.remove("open");
+    saveState();
   });
 
   input.addEventListener("keydown", function(e) {
@@ -322,7 +351,7 @@
     return "<p>" + html + "</p>";
   }
 
-  function appendMessage(role, text) {
+  function appendMessageToDOM(role, text) {
     var div = document.createElement("div");
     div.className = "chatbot-msg " + role;
     var bubble = document.createElement("div");
@@ -335,6 +364,10 @@
     div.appendChild(bubble);
     messagesContainer.appendChild(div);
     messagesContainer.scrollTop = messagesContainer.scrollHeight;
+  }
+
+  function appendMessage(role, text) {
+    appendMessageToDOM(role, text);
   }
 
   function showTyping() {
@@ -363,6 +396,8 @@
     sendBtn.disabled = true;
     showTyping();
 
+    saveState();
+
     fetch(WORKER_URL, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -376,6 +411,7 @@
       } else {
         appendMessage("bot", data.reply);
         chatMessages.push({ role: "assistant", content: data.reply });
+        saveState();
       }
     })
     .catch(function(err) {
@@ -388,5 +424,7 @@
       input.focus();
     });
   }
+
+  restoreState();
 })();
 </script>
