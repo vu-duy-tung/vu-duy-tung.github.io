@@ -1,0 +1,23 @@
+---
+layout: none
+permalink: /chatbot-context.json
+sitemap: false
+---
+{
+  "about": {{ site.first_name | append: " " | append: site.middle_name | append: " " | append: site.last_name | jsonify }},
+  "bio": {% capture bio %}{% assign about_page = site.pages | where: "permalink", "/" | first %}{{ about_page.content | strip_html | strip_newlines | strip }}{% endcapture %}{{ bio | jsonify }},
+  "subtitle": {% assign about_page = site.pages | where: "permalink", "/" | first %}{{ about_page.subtitle | strip_html | strip | jsonify }},
+  "miscellaneous": {% assign about_page = site.pages | where: "permalink", "/" | first %}{% if about_page.miscellaneous and about_page.miscellaneous.content %}{{ about_page.miscellaneous.content | strip | jsonify }}{% else %}null{% endif %},
+  "cv": {% if site.data.cv %}{{ site.data.cv | jsonify }}{% else %}null{% endif %},
+  "publications": [{% for entry in site.bibliography %}{% unless forloop.first %},{% endunless %}{{ entry | jsonify }}{% endfor %}],
+  "projects": [{% for project in site.projects %}{% unless forloop.first %},{% endunless %}{"title": {{ project.title | jsonify }}, "description": {{ project.description | jsonify }}, "content": {{ project.content | strip_html | strip_newlines | truncate: 500 | jsonify }}{% if project.github %}, "github": {{ project.github | jsonify }}{% endif %}}{% endfor %}],
+  "posts": [{% for post in site.posts %}{% unless forloop.first %},{% endunless %}{"title": {{ post.title | jsonify }}, "date": {{ post.date | date: "%Y-%m-%d" | jsonify }}, "description": {{ post.description | jsonify }}, "content": {{ post.content | strip_html | strip_newlines | truncate: 300 | jsonify }}}{% endfor %}],
+  "teachings": [{% for teaching in site.teachings %}{% unless forloop.first %},{% endunless %}{"title": {{ teaching.title | jsonify }}, "description": {{ teaching.description | jsonify }}, "content": {{ teaching.content | strip_html | strip_newlines | truncate: 500 | jsonify }}{% if teaching.course_code %}, "course_code": {{ teaching.course_code | jsonify }}{% endif %}{% if teaching.institution %}, "institution": {{ teaching.institution | jsonify }}{% endif %}{% if teaching.year %}, "year": {{ teaching.year | jsonify }}{% endif %}{% if teaching.term %}, "term": {{ teaching.term | jsonify }}{% endif %}}{% endfor %}],
+  "news": [{% for item in site.news %}{% unless forloop.first %},{% endunless %}{"date": {{ item.date | date: "%Y-%m-%d" | jsonify }}, "content": {{ item.content | strip_html | strip_newlines | strip | jsonify }}}{% endfor %}],
+  "contact": {
+    "email": {{ site.data.socials.email | jsonify }},
+    "github": {{ site.data.socials.github_username | jsonify }},
+    "scholar": {{ site.data.socials.scholar_userid | jsonify }},
+    "linkedin": {{ site.data.socials.linkedin_username | jsonify }}
+  }
+}
