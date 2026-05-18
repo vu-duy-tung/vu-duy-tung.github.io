@@ -180,13 +180,31 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-.about-intro .about-poem {
-  clear: left;
+.about-intro {
   display: block;
   width: 100%;
+}
+
+// Intro text only; ends before the poem so the quote can sit below it beside the profile
+.about-intro-body {
+  display: block;
+  overflow: hidden;
+}
+
+.about-poem-wrap {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 1rem;
   box-sizing: border-box;
-  margin-top: 1.25rem;
-  margin-bottom: 0.5rem;
+}
+
+.about-poem-wrap .about-poem {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0 !important;
   padding: 0.75rem 1rem;
   font-size: 1rem !important;
   font-style: italic;
@@ -219,13 +237,13 @@ ul.task-list input[type="checkbox"] {
 }
 
 @media (min-width: 576px) {
-  .about-intro .about-poem::before {
+  .about-poem-wrap .about-poem::before {
     // Align with the left edge of intro text beside the floated profile
     left: calc(30% + 2.5rem);
   }
 }
 
-html[data-theme="dark"] .about-intro .about-poem::before {
+html[data-theme="dark"] .about-poem-wrap .about-poem::before {
   background-color: color-mix(in srgb, var(--global-text-color-light) 28%, transparent);
 }
 
