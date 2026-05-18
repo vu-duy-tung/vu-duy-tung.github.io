@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-<div class="post">
-  <header class="post-header" style="text-align: center;">
+<div class="post about-page">
+  <header class="post-header about-header" style="text-align: center;">
     <h1 class="post-title">
       {% if site.title == 'blank' %}
         <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
@@ -14,9 +14,9 @@ layout: default
     <p class="desc">{{ page.subtitle }}</p>
   </header>
 
-  <article>
+  <article class="about-main">
     {% if page.profile %}
-      <div class="profile profile-custom float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+      <div class="about-profile profile profile-custom float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
         {% if page.profile.image %}
           {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
           {% if page.profile.image_circular %}
@@ -50,47 +50,59 @@ layout: default
       </div>
     {% endif %}
 
-    <div class="clearfix">{{ content }}</div>
+    <section class="about-section about-bio">
+      <div class="clearfix">{{ content }}</div>
+    </section>
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
-      <h2 class="section-title">
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
-      </h2>
-      {% include news.liquid limit=true %}
+      <section class="about-section about-news">
+        <h2 class="section-title">
+          <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
+        </h2>
+        {% include news.liquid limit=true %}
+      </section>
     {% endif %}
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
-      <h2 class="section-title">
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
+      <section class="about-section about-papers">
+        <h2 class="section-title">
+          <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Publications</a>
+        </h2>
+        {% include selected_papers.liquid %}
+      </section>
     {% endif %}
 
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
-      <h2 class="section-title">
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">Latest Posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
+      <section class="about-section about-posts">
+        <h2 class="section-title">
+          <a href="{{ '/blog/' | relative_url }}" style="color: inherit">Latest Posts</a>
+        </h2>
+        {% include latest_posts.liquid %}
+      </section>
     {% endif %}
 
     <!-- Miscellaneous -->
     {% if page.miscellaneous and page.miscellaneous.enabled %}
-      <h2 class="section-title">Miscellaneous</h2>
-      <div class="miscellaneous-content">
-        {{ page.miscellaneous.content }}
-      </div>
+      <section class="about-section about-misc">
+        <h2 class="section-title">Miscellaneous</h2>
+        <div class="miscellaneous-content">
+          {{ page.miscellaneous.content }}
+        </div>
+      </section>
     {% endif %}
 
     <!-- Social -->
     {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% social_links %}</div>
+      <section class="about-section about-social">
+        <div class="social">
+          <div class="contact-icons">{% social_links %}</div>
 
-        <div class="contact-note">{{ site.contact_note }}</div>
-      </div>
+          <div class="contact-note">{{ site.contact_note }}</div>
+        </div>
+      </section>
     {% endif %}
 
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}

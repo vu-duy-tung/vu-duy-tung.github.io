@@ -180,6 +180,26 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+.about-poem {
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  padding-left: 12%;
+  font-style: italic;
+  line-height: 1.65;
+  color: var(--global-text-color);
+
+  p {
+    margin: 0.15rem 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: 576px) {
+  .about-poem {
+    padding-left: 42%;
+  }
+}
+
 .more-info-section {
   margin-top: 1rem;
   margin-bottom: 1rem;

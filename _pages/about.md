@@ -30,10 +30,21 @@ miscellaneous:
     I love dogs, cats, and kids, and I'm really into playing football—I always miss the days when I used to play with bros every single day. My favorite manga is Space Brothers. At home, my family usually calls me Cún, while the nickname I've used since high school is Mino. Mino originates from the name of my old dog, and I started using it as my nickname to participate in online Competitive Programming contests so I would never forget him.
 ---
 
+<div class="about-intro">
+
 I am a senior Computer Science student at VinUniversity, actively engaged in research across Natural Language Processing, Large Language Models, Multimodal Learning, and Speech. I am currently exploring and identifying a research direction that I would like to commit to for the next several years, with a focus on applied approaches that can translate into impactful, real-world systems.
+
+<div class="about-poem" lang="vi">
+  <p>Dẫu trói chân tay đến ngặt nghèo,</p>
+  <p>Núi rừng hương ngát với chim kêu;</p>
+  <p>Tự do thưởng ngoạn, ai ngăn được,</p>
+  <p>Cô quạnh đường xa, vợi ít nhiều.</p>
+</div>
 
 <!-- I love dogs, cats, and kids.
 
 I love football and always miss the days when I used to play with the gang every day.
 
 The manga I like most is Space Brother. -->
+
+</div>
