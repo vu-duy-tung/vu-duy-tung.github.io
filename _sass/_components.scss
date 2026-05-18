@@ -181,40 +181,52 @@ ul.task-list input[type="checkbox"] {
 }
 
 .about-intro .about-poem {
+  clear: left;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
   margin-top: 1.25rem;
   margin-bottom: 0.5rem;
-  margin-left: 0;
-  margin-right: 0;
-  padding: 0.65rem 0.9rem 0.65rem 0.85rem;
-  width: fit-content;
-  max-width: 100%;
+  padding: 0.75rem 1rem;
   font-size: 1rem !important;
   font-style: italic;
   line-height: 1.5;
+  text-align: center;
   color: var(--global-text-color-light);
   background-color: var(--global-code-bg-color);
   border: none;
-  border-left: 3px solid color-mix(in srgb, var(--global-text-color-light) 35%, transparent);
   border-radius: 4px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    bottom: 0.5rem;
+    width: 3px;
+    border-radius: 2px;
+    background-color: color-mix(in srgb, var(--global-text-color-light) 35%, transparent);
+  }
 
   p {
     margin: 0.2rem 0;
     padding: 0;
     font-size: 1rem !important;
+    text-align: center;
     color: inherit;
   }
 }
 
 @media (min-width: 576px) {
-  .about-intro .about-poem {
-    // Clear floated profile (30% + 2.5rem gap), then sit in the text column
-    margin-left: calc(30% + 2.5rem + 1.5rem);
-    max-width: calc(70% - 2.5rem - 2.5rem);
+  .about-intro .about-poem::before {
+    // Align with the left edge of intro text beside the floated profile
+    left: calc(30% + 2.5rem);
   }
 }
 
-html[data-theme="dark"] .about-intro .about-poem {
-  border-left-color: color-mix(in srgb, var(--global-text-color-light) 28%, transparent);
+html[data-theme="dark"] .about-intro .about-poem::before {
+  background-color: color-mix(in srgb, var(--global-text-color-light) 28%, transparent);
 }
 
 .more-info-section {

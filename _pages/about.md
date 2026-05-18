@@ -35,10 +35,10 @@ miscellaneous:
 I am a senior Computer Science student at VinUniversity, actively engaged in research across Natural Language Processing, Large Language Models, Multimodal Learning, and Speech. I am currently exploring and identifying a research direction that I would like to commit to for the next several years, with a focus on applied approaches that can translate into impactful, real-world systems.
 
 <blockquote class="about-poem" lang="vi">
-  <p>Dẫu trói chân tay đến ngặt nghèo,</p>
+  <p>"Dẫu trói chân tay đến ngặt nghèo,</p>
   <p>Núi rừng hương ngát với chim kêu;</p>
   <p>Tự do thưởng ngoạn, ai ngăn được,</p>
-  <p>Cô quạnh đường xa, vợi ít nhiều.</p>
+  <p>Cô quạnh đường xa, vợi ít nhiều."</p>
 </blockquote>
 
 <!-- I love dogs, cats, and kids.
