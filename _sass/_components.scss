@@ -183,32 +183,38 @@ ul.task-list input[type="checkbox"] {
 .about-intro .about-poem {
   margin-top: 1.25rem;
   margin-bottom: 0.5rem;
-  margin-left: 16%;
+  margin-left: 0;
   margin-right: 0;
-  padding: 0.75rem 1rem;
+  padding: 0.65rem 0.9rem 0.65rem 0.85rem;
   width: fit-content;
-  max-width: 84%;
-  font-size: inherit;
+  max-width: 100%;
+  font-size: 1rem !important;
   font-style: italic;
-  line-height: 1.65;
+  line-height: 1.5;
   color: var(--global-text-color-light);
   background-color: var(--global-code-bg-color);
   border: none;
-  border-left: 3px solid var(--global-divider-color);
+  border-left: 3px solid color-mix(in srgb, var(--global-text-color-light) 35%, transparent);
   border-radius: 4px;
 
   p {
     margin: 0.2rem 0;
     padding: 0;
+    font-size: 1rem !important;
     color: inherit;
   }
 }
 
 @media (min-width: 576px) {
   .about-intro .about-poem {
-    margin-left: 48%;
-    max-width: 50%;
+    // Clear floated profile (30% + 2.5rem gap), then sit in the text column
+    margin-left: calc(30% + 2.5rem + 1.5rem);
+    max-width: calc(70% - 2.5rem - 2.5rem);
   }
+}
+
+html[data-theme="dark"] .about-intro .about-poem {
+  border-left-color: color-mix(in srgb, var(--global-text-color-light) 28%, transparent);
 }
 
 .more-info-section {
