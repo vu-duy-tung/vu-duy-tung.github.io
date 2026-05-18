@@ -241,15 +241,15 @@ ul.task-list input[type="checkbox"] {
 
 .about-poem-wrap .about-poem {
   display: block;
-  width: 100%;
+  width: fit-content;
   max-width: 100%;
   box-sizing: border-box;
-  margin: 0 !important;
+  margin: 0 auto !important;
   padding: 0.75rem 1rem;
   font-size: 1rem !important;
   font-style: italic;
   line-height: 1.5;
-  text-align: center;
+  text-align: left;
   color: var(--global-text-color-light);
   background: transparent;
   border: none;
@@ -259,7 +259,7 @@ ul.task-list input[type="checkbox"] {
     margin: 0.2rem 0;
     padding: 0;
     font-size: 1rem !important;
-    text-align: center;
+    text-align: left;
     color: inherit;
   }
 }
