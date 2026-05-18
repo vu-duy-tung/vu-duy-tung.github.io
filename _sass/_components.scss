@@ -180,23 +180,34 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-.about-poem {
+.about-intro .about-poem {
   margin-top: 1.25rem;
   margin-bottom: 0.5rem;
-  padding-left: 12%;
+  margin-left: 16%;
+  margin-right: 0;
+  padding: 0.75rem 1rem;
+  width: fit-content;
+  max-width: 84%;
+  font-size: inherit;
   font-style: italic;
   line-height: 1.65;
-  color: var(--global-text-color);
+  color: var(--global-text-color-light);
+  background-color: var(--global-code-bg-color);
+  border: none;
+  border-left: 3px solid var(--global-divider-color);
+  border-radius: 4px;
 
   p {
-    margin: 0.15rem 0;
+    margin: 0.2rem 0;
     padding: 0;
+    color: inherit;
   }
 }
 
 @media (min-width: 576px) {
-  .about-poem {
-    padding-left: 42%;
+  .about-intro .about-poem {
+    margin-left: 48%;
+    max-width: 50%;
   }
 }
 
