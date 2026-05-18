@@ -224,6 +224,7 @@ ul.task-list input[type="checkbox"] {
   max-width: 100%;
   margin-top: 1rem;
   box-sizing: border-box;
+  text-align: center;
   background-color: var(--global-code-bg-color);
   border-radius: 4px;
 
@@ -240,26 +241,27 @@ ul.task-list input[type="checkbox"] {
 }
 
 .about-poem-wrap .about-poem {
-  display: block;
-  width: fit-content;
-  max-width: 100%;
+  display: inline-block;
+  max-width: calc(100% - 2rem);
   box-sizing: border-box;
-  margin: 0 auto !important;
+  margin: 0 !important;
   padding: 0.75rem 1rem;
   font-size: 1rem !important;
   font-style: italic;
   line-height: 1.5;
-  text-align: left;
+  text-align: left !important;
   color: var(--global-text-color-light);
   background: transparent;
   border: none;
   border-radius: 0;
+  vertical-align: top;
 
   p {
+    display: block;
     margin: 0.2rem 0;
     padding: 0;
     font-size: 1rem !important;
-    text-align: left;
+    text-align: left !important;
     color: inherit;
   }
 }
