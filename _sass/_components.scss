@@ -180,15 +180,32 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+.about-bio-columns {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: start;
+}
+
+.about-profile-col {
+  min-width: 0;
+}
+
+.about-content-col {
+  min-width: 0;
+  width: 100%;
+}
+
+.about-bio-columns .about-profile.profile-custom {
+  float: none !important;
+}
+
 .about-intro {
   display: block;
   width: 100%;
 }
 
-// Intro text only; ends before the poem so the quote can sit below it beside the profile
 .about-intro-body {
   display: block;
-  overflow: hidden;
 }
 
 .about-poem-wrap {
@@ -236,12 +253,6 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-@media (min-width: 576px) {
-  .about-poem-wrap .about-poem::before {
-    // Align with the left edge of intro text beside the floated profile
-    left: calc(30% + 2.5rem);
-  }
-}
 
 html[data-theme="dark"] .about-poem-wrap .about-poem::before {
   background-color: color-mix(in srgb, var(--global-text-color-light) 28%, transparent);
@@ -275,6 +286,29 @@ html[data-theme="dark"] .about-poem-wrap .about-poem::before {
   .profile-custom {
     width: 30%;
     margin-top: 0;
+  }
+
+  .about-bio-columns {
+    grid-template-columns: 30% minmax(0, 1fr);
+    column-gap: 2.5rem;
+  }
+
+  .about-bio-columns .about-profile.profile-custom {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .about-bio-columns--profile-right {
+    grid-template-columns: minmax(0, 1fr) 30%;
+
+    .about-profile-col {
+      order: 2;
+    }
+
+    .about-content-col {
+      order: 1;
+    }
   }
 
   .profile-custom.float-left {
