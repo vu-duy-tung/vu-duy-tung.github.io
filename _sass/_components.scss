@@ -181,22 +181,31 @@ ul.task-list input[type="checkbox"] {
 }
 
 .about-bio-columns {
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: start;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 .about-profile-col {
-  min-width: 0;
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about-content-col {
+  flex: 1 1 auto;
   min-width: 0;
   width: 100%;
 }
 
 .about-bio-columns .about-profile.profile-custom {
   float: none !important;
+  width: 100%;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .about-intro {
@@ -210,10 +219,24 @@ ul.task-list input[type="checkbox"] {
 
 .about-poem-wrap {
   display: block;
+  position: relative;
   width: 100%;
   max-width: 100%;
   margin-top: 1rem;
   box-sizing: border-box;
+  background-color: var(--global-code-bg-color);
+  border-radius: 4px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    bottom: 0.5rem;
+    width: 3px;
+    border-radius: 2px;
+    background-color: color-mix(in srgb, var(--global-text-color-light) 35%, transparent);
+  }
 }
 
 .about-poem-wrap .about-poem {
@@ -228,21 +251,9 @@ ul.task-list input[type="checkbox"] {
   line-height: 1.5;
   text-align: center;
   color: var(--global-text-color-light);
-  background-color: var(--global-code-bg-color);
+  background: transparent;
   border: none;
-  border-radius: 4px;
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0.5rem;
-    bottom: 0.5rem;
-    width: 3px;
-    border-radius: 2px;
-    background-color: color-mix(in srgb, var(--global-text-color-light) 35%, transparent);
-  }
+  border-radius: 0;
 
   p {
     margin: 0.2rem 0;
@@ -253,8 +264,7 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-
-html[data-theme="dark"] .about-poem-wrap .about-poem::before {
+html[data-theme="dark"] .about-poem-wrap::before {
   background-color: color-mix(in srgb, var(--global-text-color-light) 28%, transparent);
 }
 
@@ -289,26 +299,30 @@ html[data-theme="dark"] .about-poem-wrap .about-poem::before {
   }
 
   .about-bio-columns {
-    grid-template-columns: 30% minmax(0, 1fr);
-    column-gap: 2.5rem;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2.5rem;
   }
 
-  .about-bio-columns .about-profile.profile-custom {
-    width: 100%;
+  .about-profile-col {
+    flex: 0 0 30%;
+    width: 30%;
+    max-width: none;
     margin-left: 0;
     margin-right: 0;
   }
 
+  .about-bio-columns .about-profile.profile-custom {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .about-content-col {
+    flex: 1 1 0;
+  }
+
   .about-bio-columns--profile-right {
-    grid-template-columns: minmax(0, 1fr) 30%;
-
-    .about-profile-col {
-      order: 2;
-    }
-
-    .about-content-col {
-      order: 1;
-    }
+    flex-direction: row-reverse;
   }
 
   .profile-custom.float-left {
