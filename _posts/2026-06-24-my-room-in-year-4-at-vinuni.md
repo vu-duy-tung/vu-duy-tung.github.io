@@ -16,13 +16,21 @@ A 360-degree view of my room before moving out. Goodbye Hanoi—I'm not sure whe
 <div id="panorama" style="display:block; width:90%; height:500px; margin:20px auto; max-width:880px; border-radius:8px; border:0 none; box-shadow: 0 1px 1px rgba(0,0,0,0.11),0 2px 2px rgba(0,0,0,0.11),0 4px 4px rgba(0,0,0,0.11),0 6px 8px rgba(0,0,0,0.11),0 8px 16px rgba(0,0,0,0.11);"></div>
 
 <script>
-window.addEventListener('load', function() {
+(function () {
+  function initPanorama() {
     pannellum.viewer('panorama', {
-        "type": "equirectangular",
-        "panorama": "{{ '/assets/img/year4_room_360.png' | relative_url }}",
-        "autoLoad": true,
-        "compass": false,
-        "hfov": 110
+      type: 'equirectangular',
+      panorama: "{{ '/assets/img/year4_room_360.jpg' | relative_url }}",
+      autoLoad: true,
+      compass: false,
+      hfov: 110,
     });
-});
+  }
+
+  if (typeof pannellum !== 'undefined') {
+    initPanorama();
+  } else {
+    document.querySelector('script[src*="pannellum.js"]').addEventListener('load', initPanorama);
+  }
+})();
 </script>
