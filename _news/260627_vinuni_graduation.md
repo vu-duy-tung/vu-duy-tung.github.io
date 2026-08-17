@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-On 27 June, I graduated from VinUniversity and started enjoying [a hundred and four day of summer vacation](https://www.youtube.com/watch?v=NkQrKxTFARM) with hands-on exploration.
+Graduated from VinUniversity and started enjoying [a hundred and four days of summer vacation](https://www.youtube.com/watch?v=NkQrKxTFARM) :kissing_heart: with hands-on exploration.
