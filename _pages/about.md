@@ -34,7 +34,7 @@ miscellaneous:
 
 <div class="about-intro-body">
 
-I am a senior Computer Science student at VinUniversity, actively engaged in research across Natural Language Processing, Large Language Models, Multimodal Learning, and Speech. I am currently exploring and identifying a research direction that I would like to commit to for the next several years, with a focus on applied approaches that can translate into impactful, real-world systems.
+I am currently a MPhil student at MMSense Lab, HKUST, advised by <a href="https://mayrfung.github.io/index.html" target="_blank" rel="noopener noreferrer">Professor Yi R. (May) Fung</a>, actively engaged in research across Large Language Models, Multimodal Learning, Natural Language Processing and Speech. I am currently exploring and identifying a research direction that I would like to commit to for the next several years, with a focus on applied approaches that can translate into impactful, real-world systems.
 
 </div>
 
